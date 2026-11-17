@@ -1,0 +1,1389 @@
+"id","leMetLevel6","benthisMetiers","fishingCategoryFo","rdbStatus","rdbReplacement"
+1,"FPO_FWS_110-156_0_0",NA,"Static","not in RDB ISSG list",NA
+2,"FPO_FWS_31-49_0_0",NA,"Static","not in RDB ISSG list",NA
+4,"FPO_MCF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+5,"FPO_MOL_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+6,"FPO_MOL_0_0_0",NA,"Static","old code of one RDB ISSG code","FPO_MOL_>0_0_0"
+8,"FPO_MOL_>=29_0_0",NA,"Static","old code of one RDB ISSG code","FPO_MOL_>0_0_0"
+9,"FPO_NOC_0_0_0",NA,"Static","not in RDB ISSG list",NA
+10,"FPO_SPF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+11,"FPO_SPF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+12,"FPO_SPF_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+13,"FPO_SPF_31-49_0_0",NA,"Static","not in RDB ISSG list",NA
+14,"FPO_SPF_50-59_0_0",NA,"Static","not in RDB ISSG list",NA
+16,"FPO_SPF_>=220_0_0",NA,"Static","not in RDB ISSG list",NA
+17,"FYK_CAT_0_0_0",NA,"Static","old code of one RDB ISSG code","FYK_CAT_>0_0_0"
+19,"FYK_CRU_0_0_0",NA,"Static","not in RDB ISSG list",NA
+21,"FYK_DEF_0_0_0",NA,"Static","old code of one RDB ISSG code","FYK_DEF_>0_0_0"
+23,"FYK_SPF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+25,"GEN_DEF_1249",NA,"Static","not in RDB ISSG list",NA
+26,"GEN_DEF_1749",NA,"Static","not in RDB ISSG list",NA
+27,"GEN_DEF_2499",NA,"Static","not in RDB ISSG list",NA
+28,"GEN_DEF_349",NA,"Static","not in RDB ISSG list",NA
+29,"GEN_DEF_624",NA,"Static","not in RDB ISSG list",NA
+30,"GEN_DEF_874",NA,"Static","not in RDB ISSG list",NA
+31,"GEN_SPF_349",NA,"Static","not in RDB ISSG list",NA
+32,"GEN_UNK_349",NA,"Static","not in RDB ISSG list",NA
+33,"GNC_DEF_0",NA,"Static","not in RDB ISSG list",NA
+34,"GNC_DEF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+35,"GNC_DEF_110-156_0_0",NA,"Static","not in RDB ISSG list",NA
+36,"GNC_DEF_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+37,"GNC_DEF_349",NA,"Static","not in RDB ISSG list",NA
+38,"GNC_SPF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+39,"GND_ANA_0_0_0",NA,"Static","not in RDB ISSG list",NA
+41,"GND_CAT_0_0_0",NA,"Static","not in RDB ISSG list",NA
+42,"GND_CAT_0_40_0",NA,"Static","not in RDB ISSG list",NA
+43,"GND_CAT_100_119_0",NA,"Static","not in RDB ISSG list",NA
+44,"GND_CAT_50_59_0",NA,"Static","not in RDB ISSG list",NA
+45,"GND_CAT_50_70_0",NA,"Static","not in RDB ISSG list",NA
+46,"GND_CAT_60_79_0",NA,"Static","not in RDB ISSG list",NA
+47,"GND_CAT_80_99_0",NA,"Static","not in RDB ISSG list",NA
+48,"GND_CAT_>=100_0",NA,"Static","not in RDB ISSG list",NA
+49,"GND_DEF_0_0_0",NA,"Static","old code of one RDB ISSG code","GND_DEF_>0_0_0"
+50,"GND_DEF_0_40_0",NA,"Static","not in RDB ISSG list",NA
+51,"GND_DEF_100_119_0",NA,"Static","not in RDB ISSG list",NA
+52,"GND_DEF_10_30_0",NA,"Static","not in RDB ISSG list",NA
+53,"GND_DEF_120_219_0",NA,"Static","not in RDB ISSG list",NA
+54,"GND_DEF_40_49_0",NA,"Static","not in RDB ISSG list",NA
+55,"GND_DEF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+56,"GND_DEF_50_70_0",NA,"Static","not in RDB ISSG list",NA
+57,"GND_DEF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+58,"GND_DEF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+59,"GND_DEF_90_99_0",NA,"Static","not in RDB ISSG list",NA
+60,"GND_DEF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+61,"GND_DEF_>=220_0",NA,"Static","not in RDB ISSG list",NA
+62,"GND_DEF_NA_0_0",NA,"Static","not in RDB ISSG list",NA
+63,"GND_FWS_0_0_0",NA,"Static","not in RDB ISSG list",NA
+64,"GND_LPF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+65,"GNS_DEF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+66,"GNS_DEF_0_0_0",NA,"Static","old code of one RDB ISSG code","GNS_DEF_>0_0_0"
+67,"GNS_DEF_0_40_0",NA,"Static","not in RDB ISSG list",NA
+69,"GNS_DEF_100-109_0_0",NA,"Static","not in RDB ISSG list",NA
+71,"GNS_DEF_100_119_0",NA,"Static","not in RDB ISSG list",NA
+72,"GNS_DEF_10_30_0",NA,"Static","not in RDB ISSG list",NA
+73,"GNS_DEF_110-156",NA,"Static","not in RDB ISSG list",NA
+75,"GNS_DEF_110-156_0_0_",NA,"Static","not in RDB ISSG list",NA
+76,"GNS_DEF_110-156_0_0_0",NA,"Static","not in RDB ISSG list",NA
+77,"GNS_DEF_110_156_0_0",NA,"Static","not in RDB ISSG list",NA
+78,"GNS_DEF_120-219",NA,"Static","not in RDB ISSG list",NA
+80,"GNS_DEF_120_219_0",NA,"Static","not in RDB ISSG list",NA
+81,"GNS_DEF_1249",NA,"Static","not in RDB ISSG list",NA
+82,"GNS_DEF_149",NA,"Static","not in RDB ISSG list",NA
+83,"GNS_DEF_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+85,"GNS_DEF_349",NA,"Static","not in RDB ISSG list",NA
+86,"GNS_DEF_40_49_0",NA,"Static","not in RDB ISSG list",NA
+89,"GNS_DEF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+90,"GNS_DEF_50_70_0",NA,"Static","not in RDB ISSG list",NA
+92,"GNS_DEF_60-79_0_0",NA,"Static","old code of several RDB ISSG codes","GNS_DEF_32-89_0_0; GNS_DEF_60-69_0_0"
+93,"GNS_DEF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+94,"GNS_DEF_624",NA,"Static","not in RDB ISSG list",NA
+98,"GNS_DEF_80-99_0_0",NA,"Static","old code of several RDB ISSG codes","GNS_DEF_80-89_0_0; GNS_DEF_71-89_0_0"
+99,"GNS_DEF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+100,"GNS_DEF_874",NA,"Static","not in RDB ISSG list",NA
+102,"GNS_DEF_90-99",NA,"Static","not in RDB ISSG list",NA
+104,"GNS_DEF_90_99_0",NA,"Static","not in RDB ISSG list",NA
+105,"GNS_DEF_<10_0_0",NA,"Static","old code of one RDB ISSG code","GNS_DEF_>0_0_0"
+106,"GNS_DEF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+107,"GNS_DEF_>=100_0_0",NA,"Static","old code of one RDB ISSG code","GNS_DEF_100-119_0_0"
+109,"GNS_DEF_>=220",NA,"Static","not in RDB ISSG list",NA
+110,"GNS_DEF_>=220_0",NA,"Static","not in RDB ISSG list",NA
+112,"GNS_DEF_UND_0_0",NA,"Static","not in RDB ISSG list",NA
+113,"GNS_DEF_UNK",NA,"Static","not in RDB ISSG list",NA
+114,"GNS_DEF_misc_0_0",NA,"Static","not in RDB ISSG list",NA
+115,"GNS_DWS_0",NA,"Static","not in RDB ISSG list",NA
+116,"GNS_DWS_0_0_0",NA,"Static","not in RDB ISSG list",NA
+120,"GNS_FIF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+121,"GNS_FWS_0_0_0",NA,"Static","not in RDB ISSG list",NA
+122,"GNS_FWS_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+123,"GNS_FWS_100-109_0_0",NA,"Static","not in RDB ISSG list",NA
+124,"GNS_FWS_110-156_0_0",NA,"Static","not in RDB ISSG list",NA
+125,"GNS_FWS_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+126,"GNS_FWS_31-49_0_0",NA,"Static","not in RDB ISSG list",NA
+127,"GNS_FWS_50-59_0_0",NA,"Static","not in RDB ISSG list",NA
+128,"GNS_FWS_60-69_0_0",NA,"Static","not in RDB ISSG list",NA
+129,"GN_DEF_349",NA,"Static","not in RDB ISSG list",NA
+130,"GN_DEF_624",NA,"Static","not in RDB ISSG list",NA
+131,"GN_DWS_0",NA,"Static","not in RDB ISSG list",NA
+132,"GN_DWS_349",NA,"Static","not in RDB ISSG list",NA
+133,"GN_UNK_0",NA,"Static","not in RDB ISSG list",NA
+134,"GTN_DEF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+135,"GTN_DEF_0_40_0",NA,"Static","not in RDB ISSG list",NA
+136,"GTN_DEF_10_30_0",NA,"Static","not in RDB ISSG list",NA
+137,"GTN_DEF_120_219_0",NA,"Static","not in RDB ISSG list",NA
+138,"GTN_DEF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+139,"GTN_DEF_50_70_0",NA,"Static","not in RDB ISSG list",NA
+140,"GTN_DEF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+141,"GTN_DEF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+142,"GTN_DEF_90_99_0",NA,"Static","not in RDB ISSG list",NA
+143,"GTN_DEF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+144,"GTN_DEF_>=220_0",NA,"Static","not in RDB ISSG list",NA
+145,"GTN_LPF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+146,"GTN_LPF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+147,"GTN_UND_90-99_0_0",NA,"Static","not in RDB ISSG list",NA
+148,"GTR_ANA_0_0_0",NA,"Static","not in RDB ISSG list",NA
+149,"GTR_ANA_>=157_0_0",NA,"Static","not in RDB ISSG list",NA
+150,"GTR_CAT_NA_0_0",NA,"Static","not in RDB ISSG list",NA
+151,"GTR_CEP_0_0_0",NA,"Static","not in RDB ISSG list",NA
+152,"GTR_CEP_0_40_0",NA,"Static","not in RDB ISSG list",NA
+153,"GTR_CEP_100_119_0",NA,"Static","not in RDB ISSG list",NA
+154,"GTR_CEP_10_30_0",NA,"Static","not in RDB ISSG list",NA
+155,"GTR_CEP_120_219_0",NA,"Static","not in RDB ISSG list",NA
+156,"GTR_CEP_40_49_0",NA,"Static","not in RDB ISSG list",NA
+157,"GTR_CEP_50_59_0",NA,"Static","not in RDB ISSG list",NA
+158,"GTR_CEP_50_70_0",NA,"Static","not in RDB ISSG list",NA
+159,"GTR_CEP_60_79_0",NA,"Static","not in RDB ISSG list",NA
+160,"GTR_CEP_80_99_0",NA,"Static","not in RDB ISSG list",NA
+161,"GTR_CEP_90_99_0",NA,"Static","not in RDB ISSG list",NA
+162,"GTR_CEP_>=100_0",NA,"Static","not in RDB ISSG list",NA
+163,"GTR_CEP_>=220_0",NA,"Static","not in RDB ISSG list",NA
+164,"GTR_CRU_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+165,"GTR_CRU_0_0_0",NA,"Static","not in RDB ISSG list",NA
+166,"GTR_CRU_0_40_0",NA,"Static","not in RDB ISSG list",NA
+169,"GTR_CRU_100_119_0",NA,"Static","not in RDB ISSG list",NA
+170,"GTR_CRU_10_30_0",NA,"Static","not in RDB ISSG list",NA
+172,"GTR_CRU_120_219_0",NA,"Static","not in RDB ISSG list",NA
+173,"GTR_CRU_40_49_0",NA,"Static","not in RDB ISSG list",NA
+174,"GTR_CRU_50_59_0",NA,"Static","not in RDB ISSG list",NA
+175,"GTR_CRU_50_70_0",NA,"Static","not in RDB ISSG list",NA
+176,"GTR_CRU_60_79_0",NA,"Static","not in RDB ISSG list",NA
+177,"GTR_CRU_80_99_0",NA,"Static","not in RDB ISSG list",NA
+178,"GTR_CRU_90_99_0",NA,"Static","not in RDB ISSG list",NA
+179,"GTR_CRU_>=100_0",NA,"Static","not in RDB ISSG list",NA
+180,"GTR_CRU_>=220_0",NA,"Static","not in RDB ISSG list",NA
+182,"GTR_DEF_0",NA,"Static","not in RDB ISSG list",NA
+183,"GTR_DEF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+184,"GTR_DEF_0_0_0",NA,"Static","old code of one RDB ISSG code","GTR_DEF_>0_0_0"
+185,"GTR_DEF_0_40_0",NA,"Static","not in RDB ISSG list",NA
+188,"GTR_DEF_100_119_0",NA,"Static","not in RDB ISSG list",NA
+189,"GTR_DEF_10_30_0",NA,"Static","not in RDB ISSG list",NA
+192,"GTR_DEF_120_219_0",NA,"Static","not in RDB ISSG list",NA
+193,"GTR_DEF_40_49_0",NA,"Static","not in RDB ISSG list",NA
+194,"LLS_ANA_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+196,"LLS_CAT_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+197,"LLS_CRU_0",NA,"Static","not in RDB ISSG list",NA
+198,"LLS_CRU_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+199,"LLS_CRU_349",NA,"Static","not in RDB ISSG list",NA
+200,"LLS_DEF_-_0_0",NA,"Static","not in RDB ISSG list",NA
+201,"LLS_DEF_0",NA,"Static","not in RDB ISSG list",NA
+203,"LLS_DEF_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+204,"LLS_DEF_110-156_0_0",NA,"Static","not in RDB ISSG list",NA
+205,"LLS_DEF_1249",NA,"Static","not in RDB ISSG list",NA
+206,"LLS_DEF_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+207,"LLS_DEF_1749",NA,"Static","not in RDB ISSG list",NA
+208,"LLS_DEF_2499",NA,"Static","not in RDB ISSG list",NA
+209,"LLS_DEF_349",NA,"Static","not in RDB ISSG list",NA
+210,"LLS_DEF_3999",NA,"Static","not in RDB ISSG list",NA
+211,"LLS_DEF_50-59_0_0",NA,"Static","not in RDB ISSG list",NA
+212,"LLS_DEF_624",NA,"Static","not in RDB ISSG list",NA
+213,"LLS_DEF_874",NA,"Static","not in RDB ISSG list",NA
+214,"LLS_DEF_>=220_0_0",NA,"Static","not in RDB ISSG list",NA
+215,"LLS_DEF_UND_0_0",NA,"Static","not in RDB ISSG list",NA
+216,"LLS_DWS_0",NA,"Static","not in RDB ISSG list",NA
+218,"LLS_DWS_1249",NA,"Static","not in RDB ISSG list",NA
+219,"LLS_DWS_2499",NA,"Static","not in RDB ISSG list",NA
+220,"LLS_DWS_3999",NA,"Static","not in RDB ISSG list",NA
+221,"LLS_FIF_-_0_0",NA,"Static","not in RDB ISSG list",NA
+224,"LLS_FWS_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+225,"LLS_FWS_110-156_0_0",NA,"Static","not in RDB ISSG list",NA
+226,"LLS_FWS_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+227,"LLS_NOC_0_0_0",NA,"Static","not in RDB ISSG list",NA
+228,"LLS_SPF_0",NA,"Static","not in RDB ISSG list",NA
+229,"LLS_SPF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+231,"LLS_SPF_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+232,"LLS_SPF_349",NA,"Static","not in RDB ISSG list",NA
+233,"LLS_SPF_3999",NA,"Static","not in RDB ISSG list",NA
+234,"LLS_SPF_624",NA,"Static","not in RDB ISSG list",NA
+235,"LLS_SPF_874",NA,"Static","not in RDB ISSG list",NA
+236,"LLS_UNK_0",NA,"Static","not in RDB ISSG list",NA
+237,"LLS_UNK_1249",NA,"Static","not in RDB ISSG list",NA
+238,"LLS_UNK_349",NA,"Static","not in RDB ISSG list",NA
+239,"LL_CRU_0",NA,"Static","not in RDB ISSG list",NA
+240,"LL_CRU_624",NA,"Static","not in RDB ISSG list",NA
+241,"LL_DEF_0",NA,"Static","not in RDB ISSG list",NA
+242,"LL_DEF_1249",NA,"Static","not in RDB ISSG list",NA
+243,"LL_DEF_149",NA,"Static","not in RDB ISSG list",NA
+244,"LL_DEF_1749",NA,"Static","not in RDB ISSG list",NA
+245,"LL_DEF_2499",NA,"Static","not in RDB ISSG list",NA
+246,"LL_DEF_349",NA,"Static","not in RDB ISSG list",NA
+247,"LL_DEF_624",NA,"Static","not in RDB ISSG list",NA
+248,"LL_DEF_874",NA,"Static","not in RDB ISSG list",NA
+249,"LL_DWS_0",NA,"Static","not in RDB ISSG list",NA
+250,"LL_DWS_1749",NA,"Static","not in RDB ISSG list",NA
+251,"LL_SPF_0",NA,"Static","not in RDB ISSG list",NA
+252,"LL_SPF_1249",NA,"Static","not in RDB ISSG list",NA
+253,"LL_SPF_349",NA,"Static","not in RDB ISSG list",NA
+254,"LL_SPF_624",NA,"Static","not in RDB ISSG list",NA
+255,"LL_UNK_0",NA,"Static","not in RDB ISSG list",NA
+256,"LL_UNK_349",NA,"Static","not in RDB ISSG list",NA
+257,"LN_CRU_0_0_0",NA,"Static","not in RDB ISSG list",NA
+259,"LTL_DEF_0",NA,"Static","not in RDB ISSG list",NA
+262,"OTB_CRU_100_119_0","OT_CRU","Otter","not in RDB ISSG list",NA
+263,"OTB_CRU_1249","OT_CRU","Otter","not in RDB ISSG list",NA
+264,"OTB_CRU_16-31","OT_CRU","Otter","not in RDB ISSG list",NA
+266,"OTB_CRU_16_31_0","OT_CRU","Otter","not in RDB ISSG list",NA
+267,"OTB_CRU_2499","OT_CRU","Otter","not in RDB ISSG list",NA
+268,"OTB_CRU_32-54_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_32-39_0_0"
+271,"OTB_CRU_32_54_0","OT_CRU","Otter","not in RDB ISSG list",NA
+272,"OTB_CRU_32_69_0","OT_CRU","Otter","not in RDB ISSG list",NA
+273,"OTB_CRU_349","OT_CRU","Otter","not in RDB ISSG list",NA
+274,"OTB_CRU_3999","OT_CRU","Otter","not in RDB ISSG list",NA
+275,"OTB_CRU_5000","OT_CRU","Otter","not in RDB ISSG list",NA
+276,"OTB_CRU_55-59_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_55-64_0_0"
+277,"OTB_CRU_55_69_0","OT_CRU","Otter","not in RDB ISSG list",NA
+278,"OTB_CRU_624","OT_CRU","Otter","not in RDB ISSG list",NA
+282,"OTB_CRU_70_99_0","OT_CRU","Otter","not in RDB ISSG list",NA
+283,"OTB_CRU_874","OT_CRU","Otter","not in RDB ISSG list",NA
+284,"OTB_CRU_90-119_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_90-99_0_0"
+285,"OTB_CRU_90-119_1_120","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_90-99_1_120"
+286,"OTB_CRU_90-119_1_140","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_90-99_1_140"
+287,"OTB_CRU_90-119_1_300","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_90-99_1_300"
+290,"OTB_CRU_>=120_0","OT_CRU","Otter","not in RDB ISSG list",NA
+292,"OTB_CRU_>=120_1_120","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_>=120_0_0"
+293,"OTB_CRU_>=55_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_55-64_0_0"
+294,"OTB_CRU_>=65_0","OT_CRU","Otter","not in RDB ISSG list",NA
+295,"OTB_CRU_>=70_0","OT_CRU","Otter","not in RDB ISSG list",NA
+296,"OTB_CRU_>=70_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_70-99_0_0"
+297,"OTB_CRU_UNK","OT_CRU","Otter","not in RDB ISSG list",NA
+298,"OTB_DEF_0","OT_DMF","Otter","not in RDB ISSG list",NA
+299,"OTB_DEF_0_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_>0_0_0"
+300,"OTB_DEF_0_16_0","OT_DMF","Otter","not in RDB ISSG list",NA
+301,"OTB_DEF_100-119","OT_DMF","Otter","not in RDB ISSG list",NA
+303,"OTB_DEF_100_119_0","OT_DMF","Otter","not in RDB ISSG list",NA
+304,"OTB_DEF_1249","OT_DMF","Otter","not in RDB ISSG list",NA
+305,"OTB_DEF_130-279_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_>=120_0_0"
+306,"OTB_DEF_130_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+308,"OTB_DEF_16_31_0","OT_DMF","Otter","not in RDB ISSG list",NA
+309,"OTB_DEF_1749","OT_DMF","Otter","not in RDB ISSG list",NA
+310,"OTB_DWS_100_119_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+311,"OTB_DWS_1249","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+312,"OTB_DWS_16_31_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+313,"OTB_DWS_1749","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+314,"OTB_DWS_2499","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+316,"OTB_DWS_32_69_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+317,"OTB_DWS_3999","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+318,"OTB_DWS_5000","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+320,"OTB_DWS_70_99_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+321,"OTB_DWS_874","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+322,"OTB_DWS_>=120_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+324,"OTB_DWS_>=70_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+325,"OTB_DWS_UNK","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+326,"OTB_FIF_90-119_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+327,"OTB_FIF_90-119_1_120","OT_DMF","Otter","not in RDB ISSG list",NA
+328,"OTB_FWS_16-31_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+329,"OTB_FWS_32-54_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+330,"OTB_FWS_55-69_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+331,"OTB_FWS_624","OT_DMF","Otter","not in RDB ISSG list",NA
+332,"OTB_FWS_70-79_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+333,"OTB_FWS_90-99_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+335,"OTB_FWS_>=105_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+336,"OTB_LPF_100-119_0_0","OT_MIX_DMF_PEL","Otter","not in RDB ISSG list",NA
+337,"OTB_LPF_70-99_0_0","OT_MIX_DMF_PEL","Otter","not in RDB ISSG list",NA
+338,"OTB_LPF_>=120_0_0","OT_MIX_DMF_PEL","Otter","not in RDB ISSG list",NA
+341,"OTB_MCD_70-99","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+343,"OTB_MCD_90-119_0_0","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTB_MCD_90-99_0_0"
+344,"OTB_MCD_90-119_1_110","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+345,"OTB_MCD_90-119_1_120","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTB_MCD_90-99_1_120"
+346,"OTB_MCD_90-119_1_140","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTB_MCD_90-99_1_140"
+347,"OTB_MCD_90-119_1_300","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTB_MCD_90-99_1_300"
+350,"OTB_MCD_UND_0_0","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+353,"OTB_SPF_70_99_0","OT_SPF","Otter","not in RDB ISSG list",NA
+354,"OTB_SPF_874","OT_SPF","Otter","not in RDB ISSG list",NA
+355,"OTB_SPF_90-119_0_0","OT_SPF","Otter","old code of one RDB ISSG code","OTB_SPF_90-99_0_0"
+357,"OTB_SPF_>=105_0_0","OT_SPF","Otter","not in RDB ISSG list",NA
+358,"OTB_SPF_>=120_0","OT_SPF","Otter","not in RDB ISSG list",NA
+360,"OTB_SPF_>=70_0","OT_SPF","Otter","not in RDB ISSG list",NA
+361,"OTB_SPF_UNK","OT_SPF","Otter","not in RDB ISSG list",NA
+362,"OTB_SPF_misc_0_0","OT_SPF","Otter","not in RDB ISSG list",NA
+363,"OTB_UNK_0","OT_MIX","Otter","not in RDB ISSG list",NA
+364,"OTB_UNK_1249","OT_MIX","Otter","not in RDB ISSG list",NA
+365,"OTB_UNK_1749","OT_MIX","Otter","not in RDB ISSG list",NA
+366,"OTB_UNK_2499","OT_MIX","Otter","not in RDB ISSG list",NA
+367,"OTB_UNK_349","OT_MIX","Otter","not in RDB ISSG list",NA
+368,"OTB_UNK_3999","OT_MIX","Otter","not in RDB ISSG list",NA
+369,"OTB_UNK_5000","OT_MIX","Otter","not in RDB ISSG list",NA
+370,"OTB_UNK_624","OT_MIX","Otter","not in RDB ISSG list",NA
+371,"OTB_UNK_874","OT_MIX","Otter","not in RDB ISSG list",NA
+372,"OTB_UNK_UNK","OT_MIX","Otter","not in RDB ISSG list",NA
+373,"OTB_unk_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+374,"OTG_UND_UND_0_0",NA,"Other","not in RDB ISSG list",NA
+375,"OTH_EEL_0_0_0",NA,"Other","not in RDB ISSG list",NA
+376,"OTH_NA_0_0_0",NA,"Other","not in RDB ISSG list",NA
+377,"OTM_ANA_UNK",NA,"Midwater","not in RDB ISSG list",NA
+378,"OTM_CAT_0_0_0",NA,"Midwater","not in RDB ISSG list",NA
+379,"OTM_CEP_0_0_0",NA,"Midwater","not in RDB ISSG list",NA
+380,"OTM_CRU_0",NA,"Midwater","not in RDB ISSG list",NA
+381,"OTM_CRU_1249",NA,"Midwater","not in RDB ISSG list",NA
+383,"OTM_CRU_32-69_0_0",NA,"Midwater","not in RDB ISSG list",NA
+384,"OTM_CRU_70-99_0_0",NA,"Midwater","not in RDB ISSG list",NA
+385,"OTM_DEF_0",NA,"Midwater","not in RDB ISSG list",NA
+386,"OTM_DEF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_DEF_>0_0_0"
+388,"OTM_DEF_100-129_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_DEF_100-119_0_0"
+389,"OTM_DEF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+390,"OTM_DEF_1249",NA,"Midwater","not in RDB ISSG list",NA
+392,"OTM_DEF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+393,"OTM_DEF_2499",NA,"Midwater","not in RDB ISSG list",NA
+395,"OTM_DEF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+396,"OTM_DEF_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+397,"OTM_DEF_3999",NA,"Midwater","not in RDB ISSG list",NA
+398,"OTM_DEF_5000",NA,"Midwater","not in RDB ISSG list",NA
+399,"OTM_DEF_55_69_0",NA,"Midwater","not in RDB ISSG list",NA
+401,"OTM_DEF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+403,"OTM_DEF_90-119_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_DEF_90-99_0_0"
+406,"OTM_DEF_>=105_0_110",NA,"Midwater","not in RDB ISSG list",NA
+407,"OTM_DEF_>=105_1_110",NA,"Midwater","old code of one RDB ISSG code","OTM_DEF_105-115_1_110"
+408,"OTM_SPF_UND_0_0",NA,"Midwater","not in RDB ISSG list",NA
+409,"OTM_SPF_UNK",NA,"Midwater","not in RDB ISSG list",NA
+410,"OTM_UNK_2499",NA,"Midwater","not in RDB ISSG list",NA
+411,"OTM_UNK_UNK",NA,"Midwater","not in RDB ISSG list",NA
+412,"OTS_CRU_349","OT_CRU","Otter","not in RDB ISSG list",NA
+413,"OTS_CRU_624","OT_CRU","Otter","not in RDB ISSG list",NA
+414,"OTS_DEF_3999","OT_DMF","Otter","not in RDB ISSG list",NA
+415,"OTT_CEP_0_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+416,"OTT_CEP_100_119_0","OT_MIX","Otter","not in RDB ISSG list",NA
+417,"OTT_CEP_16_31_0","OT_MIX","Otter","not in RDB ISSG list",NA
+418,"OTT_CEP_32_54_0","OT_MIX","Otter","not in RDB ISSG list",NA
+419,"OTT_CEP_32_69_0","OT_MIX","Otter","not in RDB ISSG list",NA
+420,"OTT_CEP_55_69_0","OT_MIX","Otter","not in RDB ISSG list",NA
+421,"OTT_CEP_70_99_0","OT_MIX","Otter","not in RDB ISSG list",NA
+422,"OTT_CEP_>=120_0","OT_MIX","Otter","not in RDB ISSG list",NA
+423,"OTT_CEP_>=70_0","OT_MIX","Otter","not in RDB ISSG list",NA
+424,"OTT_CHECK_100-119_0_",NA,"Otter","not in RDB ISSG list",NA
+425,"OTT_CHECK_70-99_0_0",NA,"Otter","not in RDB ISSG list",NA
+426,"OTT_CHECK_>=120_0_0",NA,"Otter","not in RDB ISSG list",NA
+427,"OTT_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+428,"OTT_CRU_0_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTT_CRU_>0_0_0"
+429,"OTT_CRU_0_16_0","OT_CRU","Otter","not in RDB ISSG list",NA
+431,"OTT_CRU_100_119_0","OT_CRU","Otter","not in RDB ISSG list",NA
+433,"OTT_CRU_16_31_0","OT_CRU","Otter","not in RDB ISSG list",NA
+436,"OTT_CRU_32_54_0","OT_CRU","Otter","not in RDB ISSG list",NA
+437,"OTT_CRU_32_69_0","OT_CRU","Otter","not in RDB ISSG list",NA
+438,"OTT_CRU_55_69_0","OT_CRU","Otter","not in RDB ISSG list",NA
+439,"OTT_CRU_624","OT_CRU","Otter","not in RDB ISSG list",NA
+442,"OTT_CRU_70_99_0","OT_CRU","Otter","not in RDB ISSG list",NA
+443,"OTT_CRU_90-119_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTT_CRU_90-99_0_0"
+444,"OTT_CRU_90-119_1_120","OT_CRU","Otter","old code of one RDB ISSG code","OTT_CRU_90-99_1_120"
+445,"OTT_CRU_90-119_1_140","OT_CRU","Otter","old code of one RDB ISSG code","OTT_CRU_90-99_1_140"
+446,"OTT_CRU_90-119_1_300","OT_CRU","Otter","old code of one RDB ISSG code","OTT_CRU_90-99_1_300"
+449,"OTT_CRU_>=120_0","OT_CRU","Otter","not in RDB ISSG list",NA
+451,"OTT_CRU_>=120_1_120","OT_CRU","Otter","old code of one RDB ISSG code","OTT_CRU_>=120_0_0"
+452,"OTT_CRU_>=65_0","OT_CRU","Otter","not in RDB ISSG list",NA
+453,"OTT_MCD_UND_0_0","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+459,"OTT_MOL_>=70_0","OT_MIX","Otter","not in RDB ISSG list",NA
+460,"OTT_NOC_100-119_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+461,"OTT_NOC_70-99_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+462,"OTT_NOC_>=120_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+463,"OTT_unk_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+464,"OT_CRU_349","OT_CRU","Otter","not in RDB ISSG list",NA
+465,"OT_DEF_0","OT_DMF","Otter","not in RDB ISSG list",NA
+466,"OT_DEF_1249","OT_DMF","Otter","not in RDB ISSG list",NA
+467,"OT_DWS_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+468,"OT_DWS_3999","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+469,"OT_SPF_0","OT_SPF","Otter","not in RDB ISSG list",NA
+470,"OT_SPF_5000","OT_SPF","Otter","not in RDB ISSG list",NA
+471,"PS1_DEF_0",NA,"Midwater","not in RDB ISSG list",NA
+472,"PS1_DEF_1249",NA,"Midwater","not in RDB ISSG list",NA
+473,"PS1_DEF_1749",NA,"Midwater","not in RDB ISSG list",NA
+474,"PS1_DEF_2499",NA,"Midwater","not in RDB ISSG list",NA
+475,"PS1_DEF_349",NA,"Midwater","not in RDB ISSG list",NA
+476,"PS1_DEF_3999",NA,"Midwater","not in RDB ISSG list",NA
+477,"PS1_DEF_624",NA,"Midwater","not in RDB ISSG list",NA
+478,"PS1_DEF_874",NA,"Midwater","not in RDB ISSG list",NA
+479,"PS1_LPF_0",NA,"Midwater","not in RDB ISSG list",NA
+480,"PS1_SPF_0",NA,"Midwater","not in RDB ISSG list",NA
+481,"PS1_SPF_1249",NA,"Midwater","not in RDB ISSG list",NA
+482,"PS1_SPF_149",NA,"Midwater","not in RDB ISSG list",NA
+483,"PS1_SPF_1749",NA,"Midwater","not in RDB ISSG list",NA
+484,"PS1_SPF_2499",NA,"Midwater","not in RDB ISSG list",NA
+485,"PS1_SPF_349",NA,"Midwater","not in RDB ISSG list",NA
+486,"PS1_SPF_3999",NA,"Midwater","not in RDB ISSG list",NA
+487,"PS1_SPF_5000",NA,"Midwater","not in RDB ISSG list",NA
+488,"PS1_SPF_624",NA,"Midwater","not in RDB ISSG list",NA
+489,"PS1_SPF_874",NA,"Midwater","not in RDB ISSG list",NA
+490,"PS1_UNK_0",NA,"Midwater","not in RDB ISSG list",NA
+491,"PS2_DEF_0",NA,"Midwater","not in RDB ISSG list",NA
+492,"PS2_DEF_1249",NA,"Midwater","not in RDB ISSG list",NA
+493,"PS2_DEF_1749",NA,"Midwater","not in RDB ISSG list",NA
+494,"PS2_DEF_2499",NA,"Midwater","not in RDB ISSG list",NA
+495,"PS2_DEF_3999",NA,"Midwater","not in RDB ISSG list",NA
+496,"PS2_DEF_5000",NA,"Midwater","not in RDB ISSG list",NA
+497,"PS2_DEF_624",NA,"Midwater","not in RDB ISSG list",NA
+498,"PS2_DEF_874",NA,"Midwater","not in RDB ISSG list",NA
+499,"PS2_DWS_0",NA,"Midwater","not in RDB ISSG list",NA
+500,"PS2_DWS_1749",NA,"Midwater","not in RDB ISSG list",NA
+501,"PS2_DWS_2499",NA,"Midwater","not in RDB ISSG list",NA
+502,"PS2_DWS_3999",NA,"Midwater","not in RDB ISSG list",NA
+503,"PS2_DWS_5000",NA,"Midwater","not in RDB ISSG list",NA
+504,"PS2_LPF_0",NA,"Midwater","not in RDB ISSG list",NA
+505,"PS2_SPF_0",NA,"Midwater","not in RDB ISSG list",NA
+506,"PS2_SPF_1249",NA,"Midwater","not in RDB ISSG list",NA
+507,"PS2_SPF_149",NA,"Midwater","not in RDB ISSG list",NA
+508,"PS2_SPF_1749",NA,"Midwater","not in RDB ISSG list",NA
+509,"PS2_SPF_2499",NA,"Midwater","not in RDB ISSG list",NA
+510,"PS2_SPF_349",NA,"Midwater","not in RDB ISSG list",NA
+511,"PS2_SPF_3999",NA,"Midwater","not in RDB ISSG list",NA
+512,"PTB_DEF_0_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+513,"PTB_DEF_0_16_0","OT_DMF","Otter","not in RDB ISSG list",NA
+515,"PTB_DEF_100_119_0","OT_DMF","Otter","not in RDB ISSG list",NA
+517,"PTB_DEF_16_31_0","OT_DMF","Otter","not in RDB ISSG list",NA
+519,"PTB_DEF_32_54_0","OT_DMF","Otter","not in RDB ISSG list",NA
+520,"PTB_DEF_32_69_0","OT_DMF","Otter","not in RDB ISSG list",NA
+522,"PTB_DEF_70_99_0","OT_DMF","Otter","not in RDB ISSG list",NA
+523,"PTB_DEF_874","OT_DMF","Otter","not in RDB ISSG list",NA
+526,"PTB_DEF_>=105_1_110","OT_DMF","Otter","old code of one RDB ISSG code","PTB_DEF_105-115_1_110"
+527,"PTB_DEF_>=105_1_120","OT_DMF","Otter","old code of one RDB ISSG code","PTB_DEF_105-115_1_120"
+528,"PTB_DEF_>=120_0","OT_DMF","Otter","not in RDB ISSG list",NA
+530,"PTB_DEF_>=70_0","OT_DMF","Otter","not in RDB ISSG list",NA
+531,"PTB_DEF_NA_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+533,"PTB_FWS_NA_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+534,"PTB_LPF_100-119_0_0","OT_MIX_DMF_PEL","Otter","not in RDB ISSG list",NA
+535,"PTB_MCD_100-119_0_0","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+536,"PTB_MCD_70-99_0_0","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+537,"PTB_MCD_90-119_0_0","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+538,"PTB_MCD_>=120_0_0","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+539,"PTB_MOL_70-99_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+540,"PTB_MOL_874","OT_MIX","Otter","not in RDB ISSG list",NA
+541,"PTB_NOC_>=120_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+542,"PTB_SPF_0","OT_SPF","Otter","not in RDB ISSG list",NA
+544,"PTB_SPF_16-104_0_0","OT_SPF","Otter","old code of one RDB ISSG code","PTB_SPF_16-31_0_0"
+546,"PTB_SPF_32-104_0_0","OT_SPF","Otter","old code of one RDB ISSG code","PTB_SPF_32-89_0_0"
+547,"PTB_SPF_32-54_0_0","OT_SPF","Otter","not in RDB ISSG list",NA
+551,"PTB_SPF_>=105_1_110","OT_SPF","Otter","old code of one RDB ISSG code","PTB_SPF_105-115_1_110"
+552,"PTB_SPF_>=105_1_120","OT_SPF","Otter","old code of one RDB ISSG code","PTB_SPF_105-115_1_120"
+554,"PTB_SPF_NA_0_0","OT_SPF","Otter","not in RDB ISSG list",NA
+555,"PTB_UNK_0","OT_MIX","Otter","not in RDB ISSG list",NA
+556,"PTB_unk_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+557,"PTM_CEP_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+558,"PTM_LPF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+560,"PTM_LPF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+561,"PTM_LPF_>=70_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_LPF_70-99_0_0"
+562,"PTM_NOC_32-69_0_0",NA,"Midwater","not in RDB ISSG list",NA
+563,"PTM_SPF_0",NA,"Midwater","not in RDB ISSG list",NA
+564,"PTM_SPF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_SPF_>0_0_0"
+565,"PTM_SPF_0_16_0",NA,"Midwater","not in RDB ISSG list",NA
+567,"PTM_SPF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+568,"PTM_SPF_1249",NA,"Midwater","not in RDB ISSG list",NA
+569,"PTM_SPF_16-104_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_SPF_16-31_0_0"
+571,"PTM_SPF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+572,"PTM_SPF_1749",NA,"Midwater","not in RDB ISSG list",NA
+573,"PTM_SPF_2499",NA,"Midwater","not in RDB ISSG list",NA
+574,"PTM_SPF_32-104_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_SPF_32-89_0_0"
+575,"PTM_SPF_32-54_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_SPF_32-39_0_0"
+578,"PTM_SPF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+579,"PTM_SPF_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+580,"PTM_SPF_349",NA,"Midwater","not in RDB ISSG list",NA
+581,"PTM_SPF_3999",NA,"Midwater","not in RDB ISSG list",NA
+582,"PTM_SPF_5000",NA,"Midwater","not in RDB ISSG list",NA
+583,"PTM_SPF_55_69_0",NA,"Midwater","not in RDB ISSG list",NA
+585,"PTM_SPF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+586,"PTM_SPF_874",NA,"Midwater","not in RDB ISSG list",NA
+588,"PTM_SPF_>=105_1_110",NA,"Midwater","old code of one RDB ISSG code","PTM_SPF_105-115_1_110"
+589,"PTM_SPF_>=105_1_120",NA,"Midwater","old code of one RDB ISSG code","PTM_SPF_105-115_1_120"
+590,"PTM_SPF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+592,"PTM_SPF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+593,"PTM_SPF_UNK",NA,"Midwater","not in RDB ISSG list",NA
+594,"PTM_SPF_misc_0_0",NA,"Midwater","not in RDB ISSG list",NA
+595,"PTM_UNK_0",NA,"Midwater","not in RDB ISSG list",NA
+596,"PTM_UNK_1749",NA,"Midwater","not in RDB ISSG list",NA
+597,"PTM_UNK_3999",NA,"Midwater","not in RDB ISSG list",NA
+598,"PTM_UNK_UNK",NA,"Midwater","not in RDB ISSG list",NA
+599,"PT_DEF_874","OT_DMF","Otter","not in RDB ISSG list",NA
+600,"PT_SPF_1249","OT_SPF","Otter","not in RDB ISSG list",NA
+601,"PT_SPF_2499","OT_SPF","Otter","not in RDB ISSG list",NA
+602,"QUA_MCD_100-119_0_0",NA,NA,"not in RDB ISSG list",NA
+603,"QUA_MCD_70-99_0_0",NA,NA,"not in RDB ISSG list",NA
+604,"QUA_UND_70-99_0_0",NA,NA,"not in RDB ISSG list",NA
+605,"SB_DEF_0_0_0",NA,"Demersal seine","not in RDB ISSG list",NA
+606,"SB_DEF_<16_0_0",NA,"Demersal seine","not in RDB ISSG list",NA
+607,"SB_FIF_0_0_0",NA,"Demersal seine","old code of one RDB ISSG code","SB_FIF_>0_0_0"
+608,"SB_FIF_<16_0_0",NA,"Demersal seine","not in RDB ISSG list",NA
+610,"SB_FIF_NA_0_0",NA,"Demersal seine","not in RDB ISSG list",NA
+611,"SB_SPF_0_0_0",NA,"Demersal seine","not in RDB ISSG list",NA
+612,"SDN_CEP_0_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+613,"SSC_DEF_70-99","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+615,"SSC_DEF_874","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+616,"SSC_DEF_90-119_0_0","SSC_DMF","Demersal seine","old code of one RDB ISSG code","SSC_DEF_90-99_0_0"
+618,"SSC_DEF_>=105_1_110","SSC_DMF","Demersal seine","old code of one RDB ISSG code","SSC_DEF_105-115_1_110"
+619,"SSC_DEF_>=105_1_120","SSC_DMF","Demersal seine","old code of one RDB ISSG code","SSC_DEF_105-115_1_120"
+620,"SSC_DEF_>=120","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+622,"SSC_DEF_>=16_0_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+623,"SSC_DEF_>=70_0_0","SSC_DMF","Demersal seine","old code of one RDB ISSG code","SSC_DEF_70-99_0_0"
+624,"SSC_DEF_UND_0_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+625,"SSC_DWS_1249","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+626,"SSC_MCF_100-119_0_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+627,"SSC_NOC_>=120_0_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+628,"SSC_SPF_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+629,"SSC_SPF_1249","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+630,"SSC_SPF_1749","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+631,"SSC_SPF_2499","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+632,"SSC_SPF_624","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+633,"SSC_SPF_874","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+634,"SSC_UNK_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+635,"SSC_UNK_1249","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+636,"SSC_UNK_1749","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+637,"SSC_UNK_349","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+638,"SSC_UNK_624","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+639,"SSC_UNK_874","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+640,"SUM_UND_100-119_0_0",NA,NA,"not in RDB ISSG list",NA
+641,"SUM_UND_>=120_0_0",NA,NA,"not in RDB ISSG list",NA
+642,"SV_DEF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+643,"SV_DEF_1249","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+644,"SV_DEF_1749","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+645,"SV_DEF_2499","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+646,"SV_DEF_349","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+647,"SV_DEF_624","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+648,"SV_DEF_874","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+649,"SV_FIF_0_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+650,"SV_SPF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+651,"SV_SPF_0_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+652,"SV_SPF_624","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+653,"SX_DEF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+654,"SX_DEF_2499","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+655,"SX_DEF_624","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+656,"SX_SPF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+657,"SX_SPF_624","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+658,"TBB_CEP_0_0_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+659,"TBB_CRU_0_0_0","TBB_CRU","Beam","old code of one RDB ISSG code","TBB_CRU_>0_0_0"
+661,"TBB_CRU_100_119_0","TBB_CRU","Beam","not in RDB ISSG list",NA
+662,"TBB_CRU_16-31","TBB_CRU","Beam","not in RDB ISSG list",NA
+664,"TBB_CRU_16_31_0","TBB_CRU","Beam","not in RDB ISSG list",NA
+667,"TBB_CRU_70_99_0","TBB_CRU","Beam","not in RDB ISSG list",NA
+670,"TBS_DEF_16-31_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+671,"TBS_DEF_349","OT_CRU","Otter","not in RDB ISSG list",NA
+672,"TBS_DEF_624","OT_CRU","Otter","not in RDB ISSG list",NA
+673,"TBS_DEF_874","OT_CRU","Otter","not in RDB ISSG list",NA
+674,"TBS_SPF_0","OT_CRU","Otter","not in RDB ISSG list",NA
+675,"TBS_SPF_1249","OT_CRU","Otter","not in RDB ISSG list",NA
+676,"TBS_SPF_349","OT_CRU","Otter","not in RDB ISSG list",NA
+677,"TBS_SPF_5000","OT_CRU","Otter","not in RDB ISSG list",NA
+678,"TBS_UNK_0","OT_CRU","Otter","not in RDB ISSG list",NA
+679,"TBS_UNK_349","OT_CRU","Otter","not in RDB ISSG list",NA
+680,"TBS_UNK_874","OT_CRU","Otter","not in RDB ISSG list",NA
+681,"TB_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+682,"TB_CRU_624","OT_CRU","Otter","not in RDB ISSG list",NA
+683,"TB_DEF_0","OT_DMF","Otter","not in RDB ISSG list",NA
+684,"TB_DEF_3999","OT_DMF","Otter","not in RDB ISSG list",NA
+685,"TB_DEF_624","OT_DMF","Otter","not in RDB ISSG list",NA
+686,"TB_SPF_0","OT_SPF","Otter","not in RDB ISSG list",NA
+687,"TB_SPF_3999","OT_SPF","Otter","not in RDB ISSG list",NA
+688,"TB_SPF_5000","OT_SPF","Otter","not in RDB ISSG list",NA
+689,"TMS_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+690,"TMS_CRU_2499","OT_CRU","Otter","not in RDB ISSG list",NA
+691,"TMS_CRU_349","OT_CRU","Otter","not in RDB ISSG list",NA
+692,"TMS_CRU_624","OT_CRU","Otter","not in RDB ISSG list",NA
+693,"TMS_CRU_874","OT_CRU","Otter","not in RDB ISSG list",NA
+694,"TMS_DEF_0","OT_CRU","Otter","not in RDB ISSG list",NA
+695,"TMS_DEF_874","OT_CRU","Otter","not in RDB ISSG list",NA
+696,"TM_DEF_0",NA,"Midwater","not in RDB ISSG list",NA
+697,"TM_DEF_349",NA,"Midwater","not in RDB ISSG list",NA
+698,"TM_SPF_0",NA,"Midwater","not in RDB ISSG list",NA
+699,"TM_SPF_349",NA,"Midwater","not in RDB ISSG list",NA
+700,"TM_SPF_3999",NA,"Midwater","not in RDB ISSG list",NA
+701,"TM_SPF_5000",NA,"Midwater","not in RDB ISSG list",NA
+702,"TX_CRU_349",NA,"Other","not in RDB ISSG list",NA
+703,"UNKNOWN",NA,NA,"not in RDB ISSG list",NA
+704,"XXXXXXXXXXXXXXXXXXXX",NA,NA,"not in RDB ISSG list",NA
+705,"XXXXXXXXXXXXXXXXXXXXXXX",NA,NA,"not in RDB ISSG list",NA
+706,"XXX_vvv_vvv_vvv_vvv",NA,NA,"not in RDB ISSG list",NA
+708,"TBB_CRU_>=70_0","TBB_CRU","Beam","not in RDB ISSG list",NA
+709,"TBB_DEF_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+710,"TBB_DEF_0_0_0","TBB_DMF","Beam","old code of one RDB ISSG code","TBB_DEF_>0_0_0"
+711,"TBB_DEF_0_16_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+712,"TBB_DEF_100-119","TBB_DMF","Beam","not in RDB ISSG list",NA
+714,"TBB_DEF_100_119_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+716,"TBB_DEF_16_31_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+718,"TBB_DEF_32_69_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+720,"TBB_DEF_70-99","TBB_DMF","Beam","not in RDB ISSG list",NA
+722,"TBB_DEF_70_99_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+723,"TBB_DEF_90-119_0_0","TBB_DMF","Beam","old code of one RDB ISSG code","TBB_DEF_90-99_0_0"
+725,"TBB_DEF_>=120","TBB_DMF","Beam","not in RDB ISSG list",NA
+726,"TBB_DEF_>=120_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+728,"TBB_DEF_>=70_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+729,"TBB_DEF_UND_0_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+730,"TBB_DWS_70-99_0_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+734,"TBB_MOL_0_0_0","TBB_MOL","Beam","old code of one RDB ISSG code","TBB_MOL_>0_0_0"
+736,"TBB_MOL_16_31_0","TBB_MOL","Beam","not in RDB ISSG list",NA
+738,"TBB_MOL_70_99_0","TBB_MOL","Beam","not in RDB ISSG list",NA
+739,"TBB_SPF_70-99_0_0","TBB_DMF","Beam","not in RDB ISSG list",NA
+740,"TBN_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+741,"TBN_CRU_349","OT_CRU","Otter","not in RDB ISSG list",NA
+742,"TBN_CRU_624","OT_CRU","Otter","not in RDB ISSG list",NA
+743,"TBN_DEF_0","OT_CRU","Otter","not in RDB ISSG list",NA
+744,"TBN_DEF_349","OT_CRU","Otter","not in RDB ISSG list",NA
+745,"TBN_DEF_624","OT_CRU","Otter","not in RDB ISSG list",NA
+746,"TBN_UNK_0","OT_CRU","Otter","not in RDB ISSG list",NA
+747,"TBN_UNK_624","OT_CRU","Otter","not in RDB ISSG list",NA
+748,"TBS_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+749,"TBS_CRU_1249","OT_CRU","Otter","not in RDB ISSG list",NA
+750,"TBS_CRU_16-31_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+751,"TBS_CRU_349","OT_CRU","Otter","not in RDB ISSG list",NA
+752,"TBS_CRU_5000","OT_CRU","Otter","not in RDB ISSG list",NA
+753,"TBS_CRU_624","OT_CRU","Otter","not in RDB ISSG list",NA
+754,"TBS_CRU_874","OT_CRU","Otter","not in RDB ISSG list",NA
+755,"TBS_CRU_<16_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+756,"TBS_DEF_0","OT_CRU","Otter","not in RDB ISSG list",NA
+757,"TBS_DEF_1249","OT_CRU","Otter","not in RDB ISSG list",NA
+822,"LTL_DEF_349",NA,"Static","not in RDB ISSG list",NA
+824,"LTL_SPF_0",NA,"Static","not in RDB ISSG list",NA
+826,"LTL_SPF_1249",NA,"Static","not in RDB ISSG list",NA
+827,"LTL_SPF_2499",NA,"Static","not in RDB ISSG list",NA
+828,"LTL_SPF_349",NA,"Static","not in RDB ISSG list",NA
+829,"LTL_SPF_624",NA,"Static","not in RDB ISSG list",NA
+830,"LTL_SPF_874",NA,"Static","not in RDB ISSG list",NA
+831,"LX_DEF_0",NA,"Static","not in RDB ISSG list",NA
+832,"LX_DEF_349",NA,"Static","not in RDB ISSG list",NA
+833,"MIS_CRU_0-0_0_0",NA,"Other","not in RDB ISSG list",NA
+834,"MIS_DEF_0-0_0_0",NA,"Other","not in RDB ISSG list",NA
+836,"MIS_DEF_874",NA,"Other","not in RDB ISSG list",NA
+840,"MIS_MPD_0-0_0_0",NA,"Other","not in RDB ISSG list",NA
+841,"MIS_SPF_0-0_0_0",NA,"Other","not in RDB ISSG list",NA
+844,"MIS_UND_UND_0_0",NA,"Other","not in RDB ISSG list",NA
+846,"NK_DEF_1249",NA,NA,"not in RDB ISSG list",NA
+847,"NK_DEF_874",NA,NA,"not in RDB ISSG list",NA
+848,"NO_SPF_UNK",NA,NA,"not in RDB ISSG list",NA
+849,"NULL",NA,NA,"old code of one RDB ISSG code","MIS_MIS_0_0_0"
+850,"No_Matrix6",NA,NA,"old code of several RDB ISSG codes","MIS_ANA_0_0_0; MIS_CAT_0_0_0"
+851,"No_logbook6",NA,NA,"old code of several RDB ISSG codes","MIS_ANA_0_0_0; MIS_CAT_0_0_0"
+852,"OTB/OTM","OT_MIX","Otter","not in RDB ISSG list",NA
+853,"OTB_ANA_0_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+854,"OTB_CAT_0_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+855,"OTB_CAT_16_31_0","OT_MIX","Otter","not in RDB ISSG list",NA
+856,"OTB_CAT_20_39_0","OT_MIX","Otter","not in RDB ISSG list",NA
+857,"OTB_CAT_32_54_0","OT_MIX","Otter","not in RDB ISSG list",NA
+858,"OTB_CAT_55_69_0","OT_MIX","Otter","not in RDB ISSG list",NA
+859,"OTB_CAT_70_99_0","OT_MIX","Otter","not in RDB ISSG list",NA
+860,"OTB_CAT_>0_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+861,"OTB_CAT_>=70_0","OT_MIX","Otter","not in RDB ISSG list",NA
+862,"OTB_CEP_0_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+863,"OTB_CEP_0_16_0","OT_MIX","Otter","not in RDB ISSG list",NA
+864,"OTB_CEP_100_119_0","OT_MIX","Otter","not in RDB ISSG list",NA
+865,"OTB_CEP_16_31_0","OT_MIX","Otter","not in RDB ISSG list",NA
+866,"OTB_CEP_32_54_0","OT_MIX","Otter","not in RDB ISSG list",NA
+867,"OTB_CEP_32_69_0","OT_MIX","Otter","not in RDB ISSG list",NA
+868,"OTB_CEP_55_69_0","OT_MIX","Otter","not in RDB ISSG list",NA
+869,"OTB_CEP_70_99_0","OT_MIX","Otter","not in RDB ISSG list",NA
+870,"OTB_CEP_>=120_0","OT_MIX","Otter","not in RDB ISSG list",NA
+871,"OTB_CEP_>=65_0","OT_MIX","Otter","not in RDB ISSG list",NA
+872,"OTB_CEP_>=70_0","OT_MIX","Otter","not in RDB ISSG list",NA
+873,"OTB_CHECK_100-119_0","OT_MIX","Otter","not in RDB ISSG list",NA
+874,"OTB_CHECK_100-119_0_","OT_MIX","Otter","not in RDB ISSG list",NA
+875,"OTB_CHECK_32-69_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+876,"OTB_CHECK_70-99_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+877,"OTB_CHECK_>=120_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+878,"OTB_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+879,"OTB_CRU_0-0_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+880,"OTB_CRU_0_0_0","OT_CRU","Otter","old code of one RDB ISSG code","OTB_CRU_>0_0_0"
+881,"OTB_CRU_0_16_0","OT_CRU","Otter","not in RDB ISSG list",NA
+882,"OTB_DEF_2499","OT_DMF","Otter","not in RDB ISSG list",NA
+884,"OTB_DEF_32_54_0","OT_DMF","Otter","not in RDB ISSG list",NA
+885,"OTB_DEF_32_69_0","OT_DMF","Otter","not in RDB ISSG list",NA
+886,"OTB_DEF_349","OT_DMF","Otter","not in RDB ISSG list",NA
+887,"OTB_DEF_3999","OT_DMF","Otter","not in RDB ISSG list",NA
+888,"OTB_DEF_40_54_0","OT_DMF","Otter","not in RDB ISSG list",NA
+889,"OTB_DEF_5000","OT_DMF","Otter","not in RDB ISSG list",NA
+890,"OTB_DEF_55-69_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_55-64_0_0"
+891,"OTB_DEF_55_69_0","OT_DMF","Otter","not in RDB ISSG list",NA
+892,"OTB_DEF_624","OT_DMF","Otter","not in RDB ISSG list",NA
+894,"OTB_DEF_70-89_2_35","OT_DMF","Otter","not in RDB ISSG list",NA
+895,"OTB_DEF_70-99","OT_DMF","Otter","not in RDB ISSG list",NA
+897,"OTB_DEF_70_89_0","OT_DMF","Otter","not in RDB ISSG list",NA
+898,"OTB_DEF_70_99_0","OT_DMF","Otter","not in RDB ISSG list",NA
+899,"OTB_DEF_874","OT_DMF","Otter","not in RDB ISSG list",NA
+901,"OTB_DEF_90-119_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_90-99_0_0"
+902,"OTB_DEF_90-119_1_110","OT_DMF","Otter","not in RDB ISSG list",NA
+903,"OTB_DEF_90-119_1_120","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_90-99_1_120"
+904,"OTB_DEF_90-119_1_140","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_90-99_1_140"
+905,"OTB_DEF_90-119_1_300","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_90-99_1_300"
+907,"OTB_DEF_90_119_0","OT_DMF","Otter","not in RDB ISSG list",NA
+910,"OTB_DEF_>=105_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+911,"OTB_DEF_>=105_1_110","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_105-115_1_110"
+912,"OTB_DEF_>=105_1_120","OT_DMF","Otter","old code of several RDB ISSG codes","OTB_DEF_105-115_1_120; OTB_DEF_100-119_0_0"
+913,"OTB_DEF_>=120","OT_DMF","Otter","not in RDB ISSG list",NA
+914,"OTB_DEF_>=120_0","OT_DMF","Otter","not in RDB ISSG list",NA
+916,"OTB_DEF_>=120_1_110","OT_DMF","Otter","not in RDB ISSG list",NA
+918,"OTB_DEF_>=130_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_>=120_0_0"
+919,"OTB_DEF_>=55_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_55-64_0_0"
+920,"OTB_DEF_>=65_0","OT_DMF","Otter","not in RDB ISSG list",NA
+921,"OTB_DEF_>=65_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+922,"OTB_DEF_>=70_0","OT_DMF","Otter","not in RDB ISSG list",NA
+923,"OTB_DEF_>=70_0_0","OT_DMF","Otter","old code of several RDB ISSG codes","OTB_DEF_70-99_0_0; OTB_DEF_70-89_0_0"
+924,"OTB_DEF_UND_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+925,"OTB_DEF_UNK","OT_DMF","Otter","not in RDB ISSG list",NA
+926,"OTB_DEF_misc_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+927,"OTB_DEF_misc_1_110","OT_DMF","Otter","not in RDB ISSG list",NA
+928,"OTB_DWS_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+931,"OTB_MIS_0_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+932,"OTB_MOL_0","OT_MIX","Otter","not in RDB ISSG list",NA
+933,"OTB_MOL_0_0_0","OT_MIX","Otter","old code of one RDB ISSG code","OTB_MOL_>0_0_0"
+934,"OTB_MOL_0_16_0","OT_MIX","Otter","not in RDB ISSG list",NA
+936,"OTB_MOL_100_119_0","OT_MIX","Otter","not in RDB ISSG list",NA
+938,"OTB_MOL_16_31_0","OT_MIX","Otter","not in RDB ISSG list",NA
+940,"OTB_MOL_32_54_0","OT_MIX","Otter","not in RDB ISSG list",NA
+941,"OTB_MOL_32_69_0","OT_MIX","Otter","not in RDB ISSG list",NA
+942,"OTB_MOL_55_69_0","OT_MIX","Otter","not in RDB ISSG list",NA
+944,"OTB_MOL_70_99_0","OT_MIX","Otter","not in RDB ISSG list",NA
+947,"OTB_MOL_>=70_0","OT_MIX","Otter","not in RDB ISSG list",NA
+950,"OTB_NOC_100-119_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+951,"OTB_NOC_32-69_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+952,"OTB_NOC_70-99_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+953,"OTB_NOC_>=120_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+954,"OTB_SPF_0","OT_SPF","Otter","not in RDB ISSG list",NA
+955,"OTB_SPF_0-0_0_0","OT_SPF","Otter","not in RDB ISSG list",NA
+956,"OTB_SPF_0_0_0","OT_SPF","Otter","old code of one RDB ISSG code","OTB_SPF_>0_0_0"
+957,"OTB_SPF_0_16_0","OT_SPF","Otter","not in RDB ISSG list",NA
+959,"OTB_SPF_100_119_0","OT_SPF","Otter","not in RDB ISSG list",NA
+960,"OTB_SPF_1249","OT_SPF","Otter","not in RDB ISSG list",NA
+961,"OTB_SPF_16-104_0_0","OT_SPF","Otter","old code of one RDB ISSG code","OTB_SPF_16-31_0_0"
+963,"OTB_SPF_16_31_0","OT_SPF","Otter","not in RDB ISSG list",NA
+964,"OTB_SPF_16_31_0_0","OT_SPF","Otter","not in RDB ISSG list",NA
+965,"OTB_SPF_1749","OT_SPF","Otter","not in RDB ISSG list",NA
+966,"OTB_SPF_2499","OT_SPF","Otter","not in RDB ISSG list",NA
+967,"OTB_SPF_32-104_0_0","OT_SPF","Otter","old code of one RDB ISSG code","OTB_SPF_32-89_0_0"
+968,"OTB_SPF_32-54_0_0","OT_SPF","Otter","old code of one RDB ISSG code","OTB_SPF_32-39_0_0"
+971,"OTB_SPF_32_54_0","OT_SPF","Otter","not in RDB ISSG list",NA
+972,"OTB_SPF_32_69_0","OT_SPF","Otter","not in RDB ISSG list",NA
+973,"OTB_SPF_3999","OT_SPF","Otter","not in RDB ISSG list",NA
+974,"OTB_SPF_5000","OT_SPF","Otter","not in RDB ISSG list",NA
+975,"OTB_SPF_55-69_0_0","OT_SPF","Otter","not in RDB ISSG list",NA
+976,"OTB_SPF_55_69_0","OT_SPF","Otter","not in RDB ISSG list",NA
+977,"OTB_SPF_624","OT_SPF","Otter","not in RDB ISSG list",NA
+979,"OTM_DEF_>=105_1_120",NA,"Midwater","old code of several RDB ISSG codes","OTM_DEF_105-115_1_120; OTM_DEF_100-119_0_0"
+980,"OTM_DEF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+982,"OTM_DEF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+983,"OTM_DEF_UNK",NA,"Midwater","not in RDB ISSG list",NA
+984,"OTM_DWS_0",NA,"Midwater","not in RDB ISSG list",NA
+985,"OTM_DWS_2499",NA,"Midwater","not in RDB ISSG list",NA
+986,"OTM_DWS_3999",NA,"Midwater","not in RDB ISSG list",NA
+987,"OTM_DWS_5000",NA,"Midwater","not in RDB ISSG list",NA
+988,"OTM_FWS_55-69_0_0",NA,"Midwater","not in RDB ISSG list",NA
+990,"OTM_FWS_UNK",NA,"Midwater","not in RDB ISSG list",NA
+991,"OTM_LPF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_LPF_>0_0_0"
+993,"OTM_LPF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+994,"OTM_LPF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+995,"OTM_LPF_32-54_0_0",NA,"Midwater","not in RDB ISSG list",NA
+996,"OTM_LPF_32-69_0_0",NA,"Midwater","not in RDB ISSG list",NA
+997,"OTM_LPF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+998,"OTM_LPF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+999,"OTM_LPF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+1001,"OTM_LPF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+1002,"OTM_MOL_16-31_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1003,"OTM_NOC_16-31_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1004,"OTM_NOC_32-69_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1005,"OTM_SPF_0",NA,"Midwater","not in RDB ISSG list",NA
+1006,"OTM_SPF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_SPF_>0_0_0"
+1007,"OTM_SPF_0_16_0",NA,"Midwater","not in RDB ISSG list",NA
+1009,"OTM_SPF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+1010,"OTM_SPF_1249",NA,"Midwater","not in RDB ISSG list",NA
+1011,"OTM_SPF_16-104_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_SPF_16-31_0_0"
+1013,"OTM_SPF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+1014,"OTM_SPF_16_31_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1015,"OTM_SPF_1749",NA,"Midwater","not in RDB ISSG list",NA
+1016,"OTM_SPF_2499",NA,"Midwater","not in RDB ISSG list",NA
+1017,"OTM_SPF_32-104_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_SPF_32-89_0_0"
+1018,"OTM_SPF_32-54_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_SPF_32-39_0_0"
+1021,"OTM_SPF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+1022,"OTM_SPF_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1023,"OTM_SPF_349",NA,"Midwater","not in RDB ISSG list",NA
+1024,"OTM_SPF_3999",NA,"Midwater","not in RDB ISSG list",NA
+1025,"OTM_SPF_40_64_0",NA,"Midwater","not in RDB ISSG list",NA
+1026,"OTM_SPF_5000",NA,"Midwater","not in RDB ISSG list",NA
+1027,"OTM_SPF_55-69_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_SPF_55-64_0_0"
+1029,"OTM_SPF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+1030,"OTM_SPF_874",NA,"Midwater","not in RDB ISSG list",NA
+1033,"OTM_SPF_>=40_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1034,"OTM_SPF_>=65_0",NA,"Midwater","not in RDB ISSG list",NA
+1035,"OTM_SPF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+1036,"OTT_CRU_>=70_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1037,"OTT_DEF_0_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTT_DEF_>0_0_0"
+1038,"OTT_DEF_0_16_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1040,"OTT_DEF_100_119_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1042,"OTT_DEF_16_31_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1044,"OTT_DEF_32_54_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1045,"OTT_DEF_32_69_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1046,"OTT_DEF_55_69_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1048,"OTT_DEF_70_99_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1049,"OTT_DEF_90-119_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTT_DEF_90-99_0_0"
+1050,"OTT_DEF_90-119_1_120","OT_DMF","Otter","old code of one RDB ISSG code","OTT_DEF_90-99_1_120"
+1051,"OTT_DEF_90-119_1_140","OT_DMF","Otter","old code of one RDB ISSG code","OTT_DEF_90-99_1_140"
+1052,"OTT_DEF_90-119_1_300","OT_DMF","Otter","old code of one RDB ISSG code","OTT_DEF_90-99_1_300"
+1055,"OTT_DEF_>=105_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1056,"OTT_DEF_>=105_1_120","OT_DMF","Otter","old code of one RDB ISSG code","OTT_DEF_105-115_1_120"
+1057,"OTT_DEF_>=120_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1060,"OTT_DEF_>=65_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1061,"OTT_DEF_>=70_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1062,"OTT_DWS_100_119_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+1065,"OTT_DWS_>=70_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+1066,"OTT_FIF_90-119_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1067,"OTT_FIF_90-119_1_120","OT_DMF","Otter","not in RDB ISSG list",NA
+1069,"OTT_MCD_70-99_0_0","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTT_MCD_70-89_0_0"
+1070,"OTT_MCD_90-119_0_0","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTT_MCD_90-99_0_0"
+1071,"OTT_MCD_90-119_1_120","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTT_MCD_90-99_1_120"
+1072,"OTT_MCD_90-119_1_140","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTT_MCD_90-99_1_140"
+1073,"OTT_MCD_90-119_1_300","OT_MIX_CRU_DMF","Otter","old code of one RDB ISSG code","OTT_MCD_90-99_1_300"
+1074,"OTT_MCD_90-119_1_>14","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+1075,"OTT_MCD_90-119_1_>140","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+1077,"PS2_SPF_5000",NA,"Midwater","not in RDB ISSG list",NA
+1078,"PS2_SPF_624",NA,"Midwater","not in RDB ISSG list",NA
+1079,"PS2_SPF_874",NA,"Midwater","not in RDB ISSG list",NA
+1080,"PS_DEF_0",NA,"Midwater","not in RDB ISSG list",NA
+1081,"PS_DEF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","PS_DEF_>0_0_0"
+1082,"PS_DEF_0_16_0",NA,"Midwater","not in RDB ISSG list",NA
+1083,"PS_DEF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+1084,"PS_DEF_1249",NA,"Midwater","not in RDB ISSG list",NA
+1085,"PS_DEF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+1086,"PS_DEF_1749",NA,"Midwater","not in RDB ISSG list",NA
+1087,"PS_DEF_2499",NA,"Midwater","not in RDB ISSG list",NA
+1088,"PS_DEF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+1089,"PS_DEF_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1090,"PS_DEF_349",NA,"Midwater","not in RDB ISSG list",NA
+1091,"PS_DEF_55_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1092,"PS_DEF_624",NA,"Midwater","not in RDB ISSG list",NA
+1093,"PS_DEF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+1094,"PS_DEF_874",NA,"Midwater","not in RDB ISSG list",NA
+1095,"PS_DEF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+1096,"PS_DEF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+1097,"PS_LPF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","PS_LPF_>0_0_0"
+1098,"PS_LPF_0_16_0",NA,"Midwater","not in RDB ISSG list",NA
+1099,"PS_LPF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+1100,"PS_LPF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+1101,"PS_LPF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+1102,"PS_SPF_0",NA,"Midwater","not in RDB ISSG list",NA
+1103,"PS_SPF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","PS_SPF_>0_0_0"
+1104,"PS_SPF_0_16_0",NA,"Midwater","not in RDB ISSG list",NA
+1106,"PS_SPF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+1107,"PS_SPF_1249",NA,"Midwater","not in RDB ISSG list",NA
+1108,"PS_SPF_16-104_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1110,"PS_SPF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+1111,"PS_SPF_1749",NA,"Midwater","not in RDB ISSG list",NA
+1112,"PS_SPF_2499",NA,"Midwater","not in RDB ISSG list",NA
+1113,"PS_SPF_32-104_0_0",NA,"Midwater","old code of one RDB ISSG code","PS_SPF_32-89_0_0"
+1115,"PS_SPF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+1116,"PS_SPF_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1117,"PS_SPF_349",NA,"Midwater","not in RDB ISSG list",NA
+1118,"PS_SPF_3999",NA,"Midwater","not in RDB ISSG list",NA
+1119,"PS_SPF_5000",NA,"Midwater","not in RDB ISSG list",NA
+1120,"PS_SPF_55_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1121,"PS_SPF_624",NA,"Midwater","not in RDB ISSG list",NA
+1122,"PS_SPF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+1123,"PS_SPF_874",NA,"Midwater","not in RDB ISSG list",NA
+1127,"PS_SPF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+1128,"PS_SPF_>=16_0_0",NA,"Midwater","old code of one RDB ISSG code","PS_SPF_<16_0_0"
+1129,"PS_SPF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+1130,"PS_SPF_misc_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1131,"PTB_CEP_0_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+1132,"PTB_CHECK_70-99_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+1133,"PTB_CHECK_>=120_0_0","OT_MIX","Otter","not in RDB ISSG list",NA
+1134,"PTB_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1137,"PTB_CRU_874","OT_CRU","Otter","not in RDB ISSG list",NA
+1139,"PTB_DEF_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1140,"AG_UND_UND_0_0",NA,NA,"not in RDB ISSG list",NA
+1141,"BTF_DEF_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1142,"BTF_DEF_10-30_0_0",NA,NA,"not in RDB ISSG list",NA
+1143,"BTF_DEF_110-156_0_0",NA,NA,"not in RDB ISSG list",NA
+1144,"BTF_DEF_50-59_0_0",NA,NA,"not in RDB ISSG list",NA
+1145,"BTF_DEF_>=220_0_0",NA,NA,"not in RDB ISSG list",NA
+1147,"DIV_DEF_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1150,"DRB_CRU_0-0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1151,"DRB_CRU_0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1152,"DRB_DEF_0-0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1153,"DRB_DES_0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1154,"DRB_DWS_0-0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1155,"DRB_MOL_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1156,"DRB_MOL_0-0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1157,"DRB_MOL_0_0_0","DRB_MOL","Dredge","old code of one RDB ISSG code","DRB_MOL_>0_0_0"
+1158,"DRB_MOL_30_0_0","DRB_MOL","Dredge","old code of one RDB ISSG code","DRB_MOL_>0_0_0"
+1160,"DRB_NOC_0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1161,"DRB_SWD_0_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1162,"FAR_SPF_624",NA,"Other","not in RDB ISSG list",NA
+1163,"FG_DEF_624",NA,"Static","not in RDB ISSG list",NA
+1164,"FNC_DEF_624",NA,"Static","not in RDB ISSG list",NA
+1165,"FOO_CEP_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1167,"FOO_DES_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1170,"FPN_CAT_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1175,"FPO_ANA_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1177,"FPO_CAT_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1178,"FPO_CAT_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1179,"FPO_CAT_31-49_0_0",NA,"Static","not in RDB ISSG list",NA
+1181,"FPO_CEP_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1182,"FPO_CRU_0",NA,"Static","not in RDB ISSG list",NA
+1183,"FPO_CRU_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1184,"FPO_CRU_0_0_0",NA,"Static","old code of one RDB ISSG code","FPO_CRU_>0_0_0"
+1185,"FPO_CRU_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1186,"FPO_CRU_1249",NA,"Static","not in RDB ISSG list",NA
+1187,"FPO_CRU_1749",NA,"Static","not in RDB ISSG list",NA
+1188,"FPO_CRU_349",NA,"Static","not in RDB ISSG list",NA
+1189,"FPO_CRU_3999",NA,"Static","not in RDB ISSG list",NA
+1190,"FPO_CRU_50-70_0_0",NA,"Static","not in RDB ISSG list",NA
+1191,"FPO_CRU_5000",NA,"Static","not in RDB ISSG list",NA
+1192,"FPO_CRU_624",NA,"Static","not in RDB ISSG list",NA
+1194,"FPO_CRU_ALL_0_0",NA,"Static","old code of one RDB ISSG code","FPO_CRU_>0_0_0"
+1195,"FPO_CRU_UND_0_0",NA,"Static","not in RDB ISSG list",NA
+1196,"FPO_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1197,"FPO_DEF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1198,"FPO_DEF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1199,"FPO_DEF_110-156_0_0",NA,"Static","not in RDB ISSG list",NA
+1200,"FPO_DEF_349",NA,"Static","not in RDB ISSG list",NA
+1201,"FPO_DEF_624",NA,"Static","not in RDB ISSG list",NA
+1203,"FPO_FIF_0_0_0",NA,"Static","old code of one RDB ISSG code","FPO_FIF_>0_0_0"
+1205,"FPO_FIN_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1206,"FPO_FWS_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1207,"FPO_FWS_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1208,"PTM_CEP_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+1209,"PTM_CEP_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+1210,"PTM_CEP_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1211,"PTM_CEP_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+1212,"PTM_CEP_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+1213,"PTM_CRU_0",NA,"Midwater","not in RDB ISSG list",NA
+1214,"PTM_CRU_100-119_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1215,"PTM_CRU_32-69_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1216,"PTM_CRU_70-99_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1217,"PTM_DEF_0",NA,"Midwater","not in RDB ISSG list",NA
+1218,"PTM_DEF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_DEF_>0_0_0"
+1219,"PTM_DEF_0_16_0",NA,"Midwater","not in RDB ISSG list",NA
+1221,"PTM_DEF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+1222,"PTM_DEF_1249",NA,"Midwater","not in RDB ISSG list",NA
+1224,"PTM_DEF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+1225,"PTM_DEF_1749",NA,"Midwater","not in RDB ISSG list",NA
+1226,"PTM_DEF_2499",NA,"Midwater","not in RDB ISSG list",NA
+1228,"PTM_DEF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+1229,"PTM_DEF_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1230,"PTM_DEF_3999",NA,"Midwater","not in RDB ISSG list",NA
+1231,"PTM_DEF_5000",NA,"Midwater","not in RDB ISSG list",NA
+1232,"PTM_DEF_55_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1234,"PTM_DEF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+1235,"PTM_DEF_874",NA,"Midwater","not in RDB ISSG list",NA
+1238,"PTM_DEF_>=105_1_110",NA,"Midwater","old code of one RDB ISSG code","PTM_DEF_105-115_1_110"
+1239,"PTM_DEF_>=105_1_120",NA,"Midwater","old code of one RDB ISSG code","PTM_DEF_105-115_1_120"
+1240,"PTM_DEF_>=120_0",NA,"Midwater","not in RDB ISSG list",NA
+1242,"PTM_DEF_>=65_0",NA,"Midwater","not in RDB ISSG list",NA
+1243,"PTM_DEF_>=70_0",NA,"Midwater","not in RDB ISSG list",NA
+1244,"PTM_DWS_0",NA,"Midwater","not in RDB ISSG list",NA
+1245,"PTM_DWS_1249",NA,"Midwater","not in RDB ISSG list",NA
+1246,"PTM_DWS_1749",NA,"Midwater","not in RDB ISSG list",NA
+1247,"PTM_DWS_2499",NA,"Midwater","not in RDB ISSG list",NA
+1248,"PTM_DWS_3999",NA,"Midwater","not in RDB ISSG list",NA
+1249,"PTM_DWS_5000",NA,"Midwater","not in RDB ISSG list",NA
+1251,"PTM_LPF_0_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_LPF_>0_0_0"
+1253,"PTM_LPF_100_119_0",NA,"Midwater","not in RDB ISSG list",NA
+1255,"PTM_LPF_16_31_0",NA,"Midwater","not in RDB ISSG list",NA
+1256,"PTM_LPF_32-54_0_0",NA,"Midwater","old code of one RDB ISSG code","PTM_LPF_32-39_0_0"
+1258,"PTM_LPF_32_54_0",NA,"Midwater","not in RDB ISSG list",NA
+1260,"PTM_LPF_70_99_0",NA,"Midwater","not in RDB ISSG list",NA
+1261,"GND_LPF_100_119_0",NA,"Static","not in RDB ISSG list",NA
+1262,"GND_LPF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+1263,"GND_LPF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+1264,"GND_LPF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+1265,"GND_LPF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+1266,"GND_SPF_0_0_0",NA,"Static","old code of one RDB ISSG code","GND_SPF_>0_0_0"
+1267,"GND_SPF_0_40_0",NA,"Static","not in RDB ISSG list",NA
+1268,"GND_SPF_10_30_0",NA,"Static","not in RDB ISSG list",NA
+1269,"GND_SPF_120_219_0",NA,"Static","not in RDB ISSG list",NA
+1270,"GND_SPF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+1271,"GND_SPF_50_70_0",NA,"Static","not in RDB ISSG list",NA
+1272,"GND_SPF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+1273,"GND_SPF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+1274,"GND_SPF_90_99_0",NA,"Static","not in RDB ISSG list",NA
+1275,"GND_SPF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+1276,"GNF_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1277,"GNF_DEF_624",NA,"Static","not in RDB ISSG list",NA
+1278,"GNS_ANA_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1279,"GNS_ANA_100-109_0_0",NA,"Static","not in RDB ISSG list",NA
+1281,"GNS_ANA_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1282,"GNS_ANA_31-49_0_0",NA,"Static","not in RDB ISSG list",NA
+1283,"GNS_ANA_60-69_0_0",NA,"Static","not in RDB ISSG list",NA
+1284,"GNS_ANA_70-79_0_0",NA,"Static","not in RDB ISSG list",NA
+1285,"GNS_ANA_80-89_0_0",NA,"Static","not in RDB ISSG list",NA
+1286,"GNS_ANA_90-99_0_0",NA,"Static","not in RDB ISSG list",NA
+1288,"GNS_ANA_>=220_0_0",NA,"Static","not in RDB ISSG list",NA
+1289,"GNS_CAT_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1290,"GNS_CAT_0_40_0",NA,"Static","not in RDB ISSG list",NA
+1291,"GNS_CAT_100_119_0",NA,"Static","not in RDB ISSG list",NA
+1292,"GNS_CAT_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1293,"GNS_CAT_50_59_0",NA,"Static","not in RDB ISSG list",NA
+1294,"GNS_CAT_50_70_0",NA,"Static","not in RDB ISSG list",NA
+1295,"GNS_CAT_60_79_0",NA,"Static","not in RDB ISSG list",NA
+1296,"GNS_CAT_80_99_0",NA,"Static","not in RDB ISSG list",NA
+1298,"GNS_CAT_>=100_0",NA,"Static","not in RDB ISSG list",NA
+1299,"GNS_CEP_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1300,"GNS_CRU_0",NA,"Static","not in RDB ISSG list",NA
+1301,"GNS_CRU_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1302,"GNS_CRU_0_0_0",NA,"Static","old code of one RDB ISSG code","GNS_CRU_>0_0_0"
+1303,"GNS_CRU_0_40_0",NA,"Static","not in RDB ISSG list",NA
+1306,"GNS_CRU_100_119_0",NA,"Static","not in RDB ISSG list",NA
+1307,"GNS_CRU_10_30_0",NA,"Static","not in RDB ISSG list",NA
+1309,"GNS_CRU_120_219_0",NA,"Static","not in RDB ISSG list",NA
+1310,"GNS_CRU_40_49_0",NA,"Static","not in RDB ISSG list",NA
+1312,"GNS_CRU_50_59_0",NA,"Static","not in RDB ISSG list",NA
+1313,"GNS_CRU_50_70_0",NA,"Static","not in RDB ISSG list",NA
+1314,"GNS_CRU_60_79_0",NA,"Static","not in RDB ISSG list",NA
+1315,"GNS_CRU_624",NA,"Static","not in RDB ISSG list",NA
+1316,"GNS_CRU_80_99_0",NA,"Static","not in RDB ISSG list",NA
+1318,"GNS_CRU_90_99_0",NA,"Static","not in RDB ISSG list",NA
+1320,"GNS_CRU_>=100_0",NA,"Static","not in RDB ISSG list",NA
+1321,"GNS_CRU_>=220_0",NA,"Static","not in RDB ISSG list",NA
+1323,"GNS_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1324,"GNS_FWS_70-79_0_0",NA,"Static","not in RDB ISSG list",NA
+1325,"GNS_FWS_80-89_0_0",NA,"Static","not in RDB ISSG list",NA
+1326,"GNS_FWS_90-99_0_0",NA,"Static","not in RDB ISSG list",NA
+1328,"GNS_FWS_>=220_0_0",NA,"Static","not in RDB ISSG list",NA
+1329,"GNS_FWS_NA_0_0",NA,"Static","not in RDB ISSG list",NA
+1330,"GNS_LPF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1331,"GNS_LPF_0_40_0",NA,"Static","not in RDB ISSG list",NA
+1332,"GNS_LPF_100_119_0",NA,"Static","not in RDB ISSG list",NA
+1334,"GNS_LPF_120_219_0",NA,"Static","not in RDB ISSG list",NA
+1335,"GNS_LPF_40_49_0",NA,"Static","not in RDB ISSG list",NA
+1336,"GNS_LPF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+1337,"GNS_LPF_50_70_0",NA,"Static","not in RDB ISSG list",NA
+1338,"GNS_LPF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+1339,"GNS_LPF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+1340,"GNS_LPF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+1341,"GNS_MCD_100-119_0_0",NA,"Static","not in RDB ISSG list",NA
+1342,"GNS_MCD_120-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1343,"GNS_MOL_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1344,"GNS_MOL_50-70_0_0",NA,"Static","not in RDB ISSG list",NA
+1345,"GNS_MOL_>0_0_0",NA,"Static","not in RDB ISSG list",NA
+1346,"GNS_MOL_>=220_0_0",NA,"Static","not in RDB ISSG list",NA
+1349,"GNS_NOC_120-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1350,"GNS_NOC_>=220_0_0",NA,"Static","not in RDB ISSG list",NA
+1351,"GNS_SPF_0",NA,"Static","not in RDB ISSG list",NA
+1352,"GNS_SPF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1353,"GNS_SPF_0_0_0",NA,"Static","old code of one RDB ISSG code","GNS_SPF_>0_0_0"
+1354,"GNS_SPF_0_40_0",NA,"Static","not in RDB ISSG list",NA
+1357,"GNS_SPF_100_119_0",NA,"Static","not in RDB ISSG list",NA
+1358,"GNS_SPF_10_30_0",NA,"Static","not in RDB ISSG list",NA
+1361,"GNS_SPF_120_219_0",NA,"Static","not in RDB ISSG list",NA
+1362,"GNS_SPF_157-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1363,"GNS_SPF_16-109",NA,"Static","not in RDB ISSG list",NA
+1364,"GNS_SPF_16-109_0_0",NA,"Static","old code of one RDB ISSG code","GNS_SPF_32-89_0_0"
+1366,"GNS_SPF_32-109_0_0",NA,"Static","old code of one RDB ISSG code","GNS_SPF_32-89_0_0"
+1367,"GNS_SPF_40_49_0",NA,"Static","not in RDB ISSG list",NA
+1370,"GNS_SPF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+1371,"GNS_SPF_50_70_0",NA,"Static","not in RDB ISSG list",NA
+1373,"GNS_SPF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+1374,"GNS_SPF_624",NA,"Static","not in RDB ISSG list",NA
+1376,"GNS_SPF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+1378,"GNS_SPF_90_99_0",NA,"Static","not in RDB ISSG list",NA
+1379,"GNS_SPF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+1381,"GNS_SPF_>=220_0",NA,"Static","not in RDB ISSG list",NA
+1383,"GNS_SPF_misc_0_0",NA,"Static","not in RDB ISSG list",NA
+1384,"GNS_UNK_0",NA,"Static","not in RDB ISSG list",NA
+1385,"GNS_UNK_349",NA,"Static","not in RDB ISSG list",NA
+1386,"GN_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1387,"GN_DEF_1249",NA,"Static","not in RDB ISSG list",NA
+1388,"SDN_CEP_100_119_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1389,"SDN_CEP_16_31_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1390,"SDN_CEP_32_54_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1391,"SDN_CEP_32_69_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1392,"SDN_CEP_70_99_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1393,"SDN_CEP_>=120_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1394,"SDN_CEP_>=70_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1395,"SDN_DEF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1396,"SDN_DEF_0_0_0","SDN_DMF","Demersal seine","old code of one RDB ISSG code","SDN_DEF_>0_0_0"
+1397,"SDN_DEF_0_16_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1399,"SDN_DEF_100_119_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1400,"SDN_DEF_1249","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1401,"SDN_DEF_2499","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1402,"SDN_DEF_32-54_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1403,"SDN_DEF_32_69_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1404,"SDN_DEF_349","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1405,"SDN_DEF_624","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1407,"SDN_DEF_70_99_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1408,"SDN_DEF_874","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1409,"SDN_DEF_90-119_0_0","SDN_DMF","Demersal seine","old code of one RDB ISSG code","SDN_DEF_90-99_0_0"
+1410,"SDN_DEF_>0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1412,"SDN_DEF_>=105_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1413,"SDN_DEF_>=105_1_110","SDN_DMF","Demersal seine","old code of one RDB ISSG code","SDN_DEF_105-115_1_110"
+1414,"SDN_DEF_>=105_1_120","SDN_DMF","Demersal seine","old code of one RDB ISSG code","SDN_DEF_105-115_1_120"
+1415,"SDN_DEF_>=120_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1417,"SDN_DEF_>=70_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1418,"SDN_FWS_0_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1419,"SDN_SPF_0_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1420,"SDN_SPF_32-54_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1421,"SPR_DEF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1422,"SPR_DEF_100-119_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1423,"SPR_DEF_1249","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1424,"SPR_DEF_70-99_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1426,"SSC_CRU_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1427,"SSC_CRU_100-119_0_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1428,"SSC_CRU_349","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1429,"SSC_CRU_624","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1430,"SSC_DEF_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1431,"SSC_DEF_0_0_0","SSC_DMF","Demersal seine","old code of one RDB ISSG code","SSC_DEF_>0_0_0"
+1432,"SSC_DEF_100-119","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1434,"SSC_DEF_1249","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1435,"SSC_DEF_1749","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1436,"SSC_DEF_2499","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1438,"SSC_DEF_349","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1439,"SSC_DEF_3999","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1440,"SSC_DEF_624","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1442,"GTR_DEF_50_59_0",NA,"Static","not in RDB ISSG list",NA
+1443,"GTR_DEF_50_70_0",NA,"Static","not in RDB ISSG list",NA
+1444,"GTR_DEF_60_79_0",NA,"Static","not in RDB ISSG list",NA
+1445,"GTR_DEF_80_99_0",NA,"Static","not in RDB ISSG list",NA
+1446,"GTR_DEF_90-99",NA,"Static","not in RDB ISSG list",NA
+1448,"GTR_DEF_90_99_0",NA,"Static","not in RDB ISSG list",NA
+1449,"GTR_DEF_>=100_0",NA,"Static","not in RDB ISSG list",NA
+1450,"GTR_DEF_>=100_0_0",NA,"Static","old code of one RDB ISSG code","GTR_DEF_100-119_0_0"
+1452,"GTR_DEF_>=220_0",NA,"Static","not in RDB ISSG list",NA
+1454,"GTR_DEF_>=80_0_0",NA,"Static","old code of one RDB ISSG code","GTR_DEF_80-89_0_0"
+1455,"GTR_DEF_misc_0_0",NA,"Static","not in RDB ISSG list",NA
+1456,"GTR_FIF_NA_0_0",NA,"Static","not in RDB ISSG list",NA
+1457,"GTR_FWS_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1459,"GTR_SPF_32-109_0_0",NA,"Static","old code of one RDB ISSG code","GTR_SPF_32-89_0_0"
+1460,"HAR_UNK_1249",NA,"Other","not in RDB ISSG list",NA
+1461,"HAR_UNK_349",NA,"Other","not in RDB ISSG list",NA
+1462,"HAR_UNK_624",NA,"Other","not in RDB ISSG list",NA
+1463,"HAR_UNK_874",NA,"Other","not in RDB ISSG list",NA
+1464,"HMD_MOL_0_0_0",NA,"Dredge","old code of one RDB ISSG code","HMD_MOL_>0_0_0"
+1465,"HMD_MOL_70-99_0_0",NA,"Dredge","not in RDB ISSG list",NA
+1466,"HMD_MOL_<16_0_0",NA,"Dredge","not in RDB ISSG list",NA
+1467,"HMD_MOL_>=120_0_0",NA,"Dredge","not in RDB ISSG list",NA
+1468,"HMD_MOL_UND_0_0",NA,"Dredge","not in RDB ISSG list",NA
+1469,"LA_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1470,"LA_DEF_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1471,"LA_DEF_1249",NA,"Static","not in RDB ISSG list",NA
+1472,"LHM_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1473,"LHM_DEF_349",NA,"Static","not in RDB ISSG list",NA
+1475,"LHM_SPF_0",NA,"Static","not in RDB ISSG list",NA
+1476,"LHM_SPF_624",NA,"Static","not in RDB ISSG list",NA
+1477,"LHM_UNK_0",NA,"Static","not in RDB ISSG list",NA
+1478,"LHM_UNK_349",NA,"Static","not in RDB ISSG list",NA
+1480,"LHP_CRU_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1481,"LHP_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1482,"LHP_DEF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1484,"LHP_FIF_-_0_0",NA,"Static","not in RDB ISSG list",NA
+1486,"LHP_FIN_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1487,"LHP_LPF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1489,"LHP_SPF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1492,"LLD_ANA_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1493,"LLD_ANA_50-59_0_0",NA,"Static","not in RDB ISSG list",NA
+1494,"LLD_ANA_NA_0_0",NA,"Static","not in RDB ISSG list",NA
+1495,"LLD_CRU_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1496,"LLD_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1497,"LLD_DEF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1499,"LLD_DEF_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1500,"LLD_DEF_349",NA,"Static","not in RDB ISSG list",NA
+1501,"LLD_DEF_624",NA,"Static","not in RDB ISSG list",NA
+1502,"LLD_DEF_874",NA,"Static","not in RDB ISSG list",NA
+1503,"LLD_FWS_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1505,"LLD_SPF_0-0_0_0",NA,"Static","not in RDB ISSG list",NA
+1509,"DRB_MOL_100_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1510,"FPO_CRU_120-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1523,"OTB_DEF_0_SAN","OT_DMF","Otter","not in RDB ISSG list",NA
+1526,"OTB_DMF_135_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1527,"OTB_DMF_155_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1529,"OTB_DWS_0_SAN","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+1531,"OTB_FWS_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1533,"OTB_NEP_80_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1534,"OTB_SHR_36_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1535,"OTB_SHR_40_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1537,"OTB_SPF_0_SAN","OT_SPF","Otter","not in RDB ISSG list",NA
+1540,"OTM_DEF_0_SAN",NA,"Midwater","not in RDB ISSG list",NA
+1543,"OTM_SPF_0_SAN",NA,"Midwater","not in RDB ISSG list",NA
+1547,"OTM_UNK_0",NA,"Midwater","not in RDB ISSG list",NA
+1557,"PTB_MOL_0","OT_MIX","Otter","not in RDB ISSG list",NA
+1560,"PTM_DEF_0_SAN",NA,"Midwater","not in RDB ISSG list",NA
+1574,"FPO_CRU_90-99_0_0",NA,"Static","not in RDB ISSG list",NA
+1575,"FPO_MCD_0",NA,"Static","not in RDB ISSG list",NA
+1576,"FPO_MCD_UND_0_0",NA,"Static","not in RDB ISSG list",NA
+1577,"FPO_vvv_vvv_vvv_vvv",NA,"Static","not in RDB ISSG list",NA
+1579,"FYK_CAT_>=220_0_0",NA,"Static","not in RDB ISSG list",NA
+1580,"FYK_CAT_100-119_0_0",NA,"Static","not in RDB ISSG list",NA
+1581,"FYK_CAT_10-30_0_0",NA,"Static","not in RDB ISSG list",NA
+1582,"FYK_CAT_120-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1583,"FYK_CAT_50-70_0_0",NA,"Static","not in RDB ISSG list",NA
+1584,"FYK_CAT_UND_0_0",NA,"Static","not in RDB ISSG list",NA
+1585,"GEN_DEF_0",NA,"Other","not in RDB ISSG list",NA
+1586,"GEN_UNK_0",NA,"Other","not in RDB ISSG list",NA
+1587,"GN_SPF_0",NA,"Static","not in RDB ISSG list",NA
+1597,"GND_LPF_90_99_0",NA,"Static","not in RDB ISSG list",NA
+1598,"GND_SPF_>=220_0",NA,"Static","not in RDB ISSG list",NA
+1600,"GND_SPF_0",NA,"Static","not in RDB ISSG list",NA
+1604,"GND_SPF_40_49_0",NA,"Static","not in RDB ISSG list",NA
+1607,"GNS_ANA___",NA,"Static","not in RDB ISSG list",NA
+1608,"GNS_CAT_120_219_0",NA,"Static","not in RDB ISSG list",NA
+1609,"GNS_DEF___",NA,"Static","not in RDB ISSG list",NA
+1610,"GNS_DEF_<40_0_0",NA,"Static","old code of one RDB ISSG code","GNS_DEF_31-39_0_0"
+1611,"GNS_DEF_60-70_0_0",NA,"Static","not in RDB ISSG list",NA
+1612,"GNS_DWS_>=100_0_0",NA,"Static","old code of one RDB ISSG code","GNS_DWS_100-119_0_0"
+1614,"GNS_DWS_50-70_0_0",NA,"Static","old code of one RDB ISSG code","GNS_DWS_50-59_0_0"
+1616,"GNS_SPF___",NA,"Static","not in RDB ISSG list",NA
+1617,"GNS_SPF_100-119__",NA,"Static","not in RDB ISSG list",NA
+1618,"GNS_vvv_vvv_vvv_vvv",NA,"Static","not in RDB ISSG list",NA
+1619,"GTN_DEF_0",NA,"Static","not in RDB ISSG list",NA
+1620,"GTN_DEF_100_119_0",NA,"Static","not in RDB ISSG list",NA
+1621,"GTN_DEF_110-156_0_0",NA,"Static","not in RDB ISSG list",NA
+1622,"GTN_UND_100-119_0_0",NA,"Static","not in RDB ISSG list",NA
+1623,"GTN_UND_120-219_0_0",NA,"Static","not in RDB ISSG list",NA
+1624,"GTR_DEF_>=70_0_0",NA,"Static","old code of one RDB ISSG code","GTR_DEF_70-79_0_0"
+1627,"GTR_DEF_UND_0_0",NA,"Static","not in RDB ISSG list",NA
+1628,"GTR_vvv_vvv_vvv_vvv",NA,"Static","not in RDB ISSG list",NA
+1629,"HAR_UNK_0",NA,"Other","not in RDB ISSG list",NA
+1630,"LHP_CRU_16-31_0_0",NA,"Static","not in RDB ISSG list",NA
+1631,"LHP_MPD_0_0_0",NA,"Static","not in RDB ISSG list",NA
+1633,"LLS_DEF_>0_0_0",NA,"Static","not in RDB ISSG list",NA
+1634,"LLS_vvv_vvv_vvv_vvv",NA,"Static","not in RDB ISSG list",NA
+1635,"LNB_UND_100-119_0_0",NA,"Static","not in RDB ISSG list",NA
+1636,"LTL_UND_UND_0_0",NA,"Static","not in RDB ISSG list",NA
+1637,"MISSING",NA,"Other","not in RDB ISSG list",NA
+1638,"NK_UND_UND_0_0",NA,"Other","not in RDB ISSG list",NA
+1639,"OFG_UND_10-30_0_0",NA,"Other","not in RDB ISSG list",NA
+1640,"OTB__100-119_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1641,"OTB_CRU_32-54_2_19-22","OT_CRU","Otter","not in RDB ISSG list",NA
+1642,"OTB_CRU_60-89_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1643,"OTB_DEF_<16_0_0 ","OT_DMF","Otter","not in RDB ISSG list",NA
+1644,"OTB_DEF_>=55_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1645,"OTB_DEF_100-129_0_0","OT_DMF","Otter","old code of one RDB ISSG code","OTB_DEF_100-119_0_0"
+1646,"OTB_DEF_16-31_2_35","OT_DMF","Otter","not in RDB ISSG list",NA
+1648,"OTB_DEF_x_x_x","OT_DMF","Otter","not in RDB ISSG list",NA
+1650,"OTB_DWS_>=130_0_0","OT_MIX_DMF_BEN","Otter","not in RDB ISSG list",NA
+1651,"OTB_DWS_100-129_0_0","OT_MIX_DMF_BEN","Otter","old code of one RDB ISSG code","OTB_DWS_100-119_0_0"
+1652,"OTB_MOL_>=70_0_0","OT_MIX","Otter","old code of one RDB ISSG code","OTB_MOL_70-99_0_0"
+1653,"OTB_SPF_>=70_0_0","OT_SPF","Otter","old code of one RDB ISSG code","OTB_SPF_70-99_0_0"
+1654,"OTB_SPF_x_x_x","OT_SPF","Otter","not in RDB ISSG list",NA
+1655,"OTG_UND_16-31_0_0",NA,"Other","not in RDB ISSG list",NA
+1656,"OTM__>=120_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1657,"OTM__100-119_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1658,"OTM__16-31_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1659,"OTM_DEF_16-31_2_35",NA,"Midwater","not in RDB ISSG list",NA
+1660,"OTM_DEF_x_x_x",NA,"Midwater","not in RDB ISSG list",NA
+1661,"OTM_DWS_0_0_0",NA,"Midwater","old code of one RDB ISSG code","OTM_DWS_>0_0_0"
+1662,"OTM_SPF_>=110_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1663,"OTM_SPF_40-59_0_0",NA,"Midwater","old code of several RDB ISSG codes","OTM_SPF_32-89_0_0; OTM_SPF_40-54_0_0; OTM_SPF_32-69_0_0"
+1664,"OTM_SPF_55_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1665,"OTM_SPF_60-89_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1666,"OTM_SPF_x_x_x",NA,"Midwater","not in RDB ISSG list",NA
+1667,"OTS_CRU_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1668,"OTT_DEF_>=130_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1669,"OTT_DEF_130-279_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1670,"OTT_MCD_<16_0_0","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+1671,"OTT_MCD_>=120_1_120","OT_MIX_CRU_DMF","Otter","not in RDB ISSG list",NA
+1672,"PS_DWS_0",NA,"Midwater","not in RDB ISSG list",NA
+1673,"PS_LPF_0",NA,"Midwater","not in RDB ISSG list",NA
+1674,"PS_SPF_<16_0_0 ",NA,"Midwater","not in RDB ISSG list",NA
+1678,"PS_SPF_UND_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1679,"PT_DEF_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1680,"PTB_CRU_>=70_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1683,"PTB_DEF_>=130_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1684,"PTB_DEF_16-31_2_35","OT_DMF","Otter","not in RDB ISSG list",NA
+1685,"PTB_DEF_UND_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1687,"PTM__16-31_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1688,"PTM_DEF_16-31_2_35",NA,"Midwater","not in RDB ISSG list",NA
+1689,"PTM_LPF_32_69_0",NA,"Midwater","not in RDB ISSG list",NA
+1690,"PTM_SPF_x_x_x",NA,"Midwater","not in RDB ISSG list",NA
+1691,"REC_DEF_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1692,"REC_SPF_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1694,"SDN_DEF_>=130_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1696,"SDN_FIF_>0_0_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1697,"SDN_SPF_32-104_0_0","SDN_DMF","Demersal seine","old code of one RDB ISSG code","SDN_DEF_32-89_0_0"
+1698,"SND_DEF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1699,"SND_UNK_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1700,"SPR_SPF_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1701,"SSC_DWS_0","SSC_DMF","Demersal seine","not in RDB ISSG list",NA
+1704,"SUM_UND_70-99_0_0",NA,NA,"not in RDB ISSG list",NA
+1705,"SUM_UND_90-119_0_0",NA,NA,"not in RDB ISSG list",NA
+1706,"SV_CRU_0","SDN_DMF","Demersal seine","not in RDB ISSG list",NA
+1707,"TB_DWS_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1708,"TB_LPF_0","OT_SPF","Otter","not in RDB ISSG list",NA
+1709,"TBS_CRU_0_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1710,"TBS_CRU_16_31_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1711,"TBS_CRU_35_0_0","OT_CRU","Otter","not in RDB ISSG list",NA
+1712,"TM_CRU_0",NA,NA,"not in RDB ISSG list",NA
+1713,"TM_DWS_0",NA,"Midwater","not in RDB ISSG list",NA
+1714,"TMS_SPF_0",NA,NA,"not in RDB ISSG list",NA
+1715,"TX_CRU_0",NA,"Other","not in RDB ISSG list",NA
+1716,"TX_DEF_0",NA,"Other","not in RDB ISSG list",NA
+1717,"TX_DWS_0",NA,"Other","not in RDB ISSG list",NA
+1718,"TX_SPF_0",NA,"Other","not in RDB ISSG list",NA
+1719,"OTM_SPF_20_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1721,"OTB_DEF_120_0_0","OT_DMF","Otter","not in RDB ISSG list",NA
+1722,"DRB_MOL_ALL_0_0","DRB_MOL","Dredge","not in RDB ISSG list",NA
+1723,"OTM_DEF_0_SAN_SAN",NA,"Midwater","not in RDB ISSG list",NA
+1724,"OTB_DEF_0_SAN_SAN","OT_DMF","Otter","not in RDB ISSG list",NA
+1725,"OTM_0_20_0_0",NA,"Midwater","not in RDB ISSG list",NA
+1726,"DRB_MDD_0_0_0","DRB_MOL",NA,"not in RDB ISSG list",NA
+1727,"DRB_MIS_0_0_0","DRB_MOL",NA,"not in RDB ISSG list",NA
+1728,"DRB_MOL_>=0_0_0","DRB_MOL",NA,"old code of one RDB ISSG code","DRB_MOL_>0_0_0"
+1730,"FPN_SPF_32-54_0_0",NA,NA,"not in RDB ISSG list",NA
+1731,"FPO_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1732,"GN_DEF_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1733,"GND_CAT_120_219_0",NA,NA,"not in RDB ISSG list",NA
+1734,"GND_SPF_30-50_0_0",NA,NA,"not in RDB ISSG list",NA
+1737,"GNS_DEF_70-90_0_0",NA,NA,"not in RDB ISSG list",NA
+1738,"GNS_DEF_90-149_0_0",NA,NA,"not in RDB ISSG list",NA
+1739,"GNS_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1741,"GSN_DEF_152_0_0",NA,NA,"not in RDB ISSG list",NA
+1742,"GSN_DEF_178_0_0",NA,NA,"not in RDB ISSG list",NA
+1743,"GSN_DEF_203_0_0",NA,NA,"not in RDB ISSG list",NA
+1744,"GSN_DEF_229_0_0",NA,NA,"not in RDB ISSG list",NA
+1745,"GTR_DEF_40-59_0_0",NA,NA,"not in RDB ISSG list",NA
+1746,"GTR_DEF_60-79_0_0",NA,NA,"old code of one RDB ISSG code","GTR_DEF_60-69_0_0"
+1747,"GTR_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1748,"HMD_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1749,"HMD_MOL_>=0_0_0",NA,NA,"old code of one RDB ISSG code","HMD_MOL_>0_0_0"
+1754,"LHM_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1756,"LHP_FIF_",NA,NA,"not in RDB ISSG list",NA
+1757,"LLD_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1758,"LLS_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1763,"OTB_CAT_32_69_0","OT_MIX",NA,"not in RDB ISSG list",NA
+1769,"OTB_CRU_40-59_0_0","OT_CRU",NA,"old code of several RDB ISSG codes","OTB_CRU_40-54_0_0; OTB_CRU_32-69_0_0"
+1771,"OTB_DEF_>=115_0_0","OT_DMF",NA,"not in RDB ISSG list",NA
+1773,"OTB_DEF_130-219_0_0","OT_DMF",NA,"old code of one RDB ISSG code","OTB_DEF_>=120_0_0"
+1774,"OTB_DEF_135_0_0","OT_DMF",NA,"not in RDB ISSG list",NA
+1775,"OTB_DEF_155_0_0","OT_DMF",NA,"not in RDB ISSG list",NA
+1777,"OTB_DEF_32-69","OT_DMF",NA,"not in RDB ISSG list",NA
+1781,"OTB_DEF_79-99_0_0","OT_DMF",NA,"not in RDB ISSG list",NA
+1782,"OTB_DWS_>=70_0_0","OT_MIX_DMF_BEN",NA,"old code of one RDB ISSG code","OTB_DWS_70-99_0_0"
+1783,"OTB_DWS_90-119_0_0","OT_MIX_DMF_BEN",NA,"old code of one RDB ISSG code","OTB_DWS_90-99_0_0"
+1784,"OTB_FIF_120","OT_DMF",NA,"not in RDB ISSG list",NA
+1785,"OTB_FIF_32","OT_DMF",NA,"not in RDB ISSG list",NA
+1786,"OTB_FIF_90","OT_DMF",NA,"not in RDB ISSG list",NA
+1787,"OTB_MCD_>=55_0_0","OT_MIX_CRU_DMF",NA,"old code of one RDB ISSG code","OTB_MCD_55-64_0_0"
+1788,"OTB_MCD_40_0_0","OT_MIX_CRU_DMF",NA,"not in RDB ISSG list",NA
+1790,"OTB_MCD_80_0_0","OT_MIX_CRU_DMF",NA,"not in RDB ISSG list",NA
+1792,"OTB_MCF_>=70_0_0","OT_MIX_DMF_PEL",NA,"old code of one RDB ISSG code","OTB_MCF_70-99_0_0"
+1794,"OTB_MPD_>=55_0_0","OT_MIX_DMF_PEL",NA,"old code of one RDB ISSG code","OTB_MPD_55-64_0_0"
+1795,"OTB_SPF_>=105_1_120","OT_SPF",NA,"old code of one RDB ISSG code","OTB_SPF_105-115_1_120"
+1799,"OTM_CAT_32_69_0",NA,NA,"not in RDB ISSG list",NA
+1800,"OTM_DEF_>=105_0_0",NA,NA,"not in RDB ISSG list",NA
+1801,"OTM_DEF_>=130_0_0",NA,NA,"old code of one RDB ISSG code","OTM_DEF_>=120_0_0"
+1802,"OTM_DEF_>=70_0_0",NA,NA,"old code of one RDB ISSG code","OTM_DEF_70-99_0_0"
+1804,"OTM_DEF_0_16_0",NA,NA,"not in RDB ISSG list",NA
+1806,"OTM_DEF_32-54_0_0",NA,NA,"old code of one RDB ISSG code","OTM_DEF_32-39_0_0"
+1810,"OTM_LPF_16-31_0_0",NA,NA,"not in RDB ISSG list",NA
+1811,"OTM_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1812,"OTM_SPF_<55_0_0",NA,NA,"not in RDB ISSG list",NA
+1813,"OTM_SPF_>=105_1_110",NA,NA,"old code of one RDB ISSG code","OTM_SPF_105-115_1_110"
+1814,"OTM_SPF_>=120_0",NA,NA,"not in RDB ISSG list",NA
+1815,"OTM_SPF_>=55_0_0",NA,NA,"old code of one RDB ISSG code","OTM_SPF_55-64_0_0"
+1818,"OTM_SPF_40_0_0",NA,NA,"not in RDB ISSG list",NA
+1821,"OTM_SPF_90-119_0_0",NA,NA,"old code of one RDB ISSG code","OTM_SPF_90-99_0_0"
+1822,"OTT_DEF_>=115_0_0","OT_DMF",NA,"not in RDB ISSG list",NA
+1823,"OTT_DWS_>=120_0","OT_MIX_DMF_BEN",NA,"not in RDB ISSG list",NA
+1825,"OTT_DWS_32_69_0","OT_MIX_DMF_BEN",NA,"not in RDB ISSG list",NA
+1826,"OTT_MOL_100-129_0_0","OT_MIX",NA,"not in RDB ISSG list",NA
+1827,"OTT_MOL_70_99_0","OT_MIX",NA,"not in RDB ISSG list",NA
+1834,"PS_MIS_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1839,"PTB_CRU_90-119_0_0","OT_CRU",NA,"old code of one RDB ISSG code","PTB_CRU_90-99_1_140"
+1840,"PTB_DEF_>=55_0_0","OT_DMF",NA,"not in RDB ISSG list",NA
+1841,"PTB_DEF_>=70_0_0","OT_DMF",NA,"old code of one RDB ISSG code","PTB_DEF_70-99_0_0"
+1842,"PTB_DEF_90-119_0_0","OT_DMF",NA,"old code of one RDB ISSG code","PTB_DEF_90-99_0_0"
+1843,"PTB_DWS_0_0_0","OT_MIX_DMF_BEN",NA,"not in RDB ISSG list",NA
+1844,"PTB_FIF_120","OT_DMF",NA,"not in RDB ISSG list",NA
+1845,"PTB_FIF_80","OT_DMF",NA,"not in RDB ISSG list",NA
+1846,"PTB_MIS_0_0_0","OT_MIX",NA,"not in RDB ISSG list",NA
+1851,"PTM_DEF_90-119_0_0",NA,NA,"old code of one RDB ISSG code","PTM_DEF_90-99_0_0"
+1852,"PTM_FIF_17",NA,NA,"not in RDB ISSG list",NA
+1853,"PTM_FIF_32",NA,NA,"not in RDB ISSG list",NA
+1854,"PTM_FIF_40",NA,NA,"not in RDB ISSG list",NA
+1855,"PTM_LPF_55_69_0",NA,NA,"not in RDB ISSG list",NA
+1856,"PTM_SPF_>=55_0_0",NA,NA,"old code of one RDB ISSG code","PTM_SPF_55-64_0_0"
+1857,"PTM_SPF_>=70_0_0",NA,NA,"old code of one RDB ISSG code","PTM_SPF_70-99_0_0"
+1860,"SDN_DEF_135_0_0","SDN_DMF",NA,"not in RDB ISSG list",NA
+1861,"SDN_DEF_155_0_0","SDN_DMF",NA,"not in RDB ISSG list",NA
+1862,"SDN_DEF_16_31_0","SDN_DMF",NA,"not in RDB ISSG list",NA
+1865,"SPR_DEF_0_0_0",NA,NA,"not in RDB ISSG list",NA
+1866,"SSC_DEF_>=55_0_0","SSC_DMF",NA,"not in RDB ISSG list",NA
+1869,"SSC_DEF_32-69","SSC_DMF",NA,"not in RDB ISSG list",NA
+1872,"TBB_DEF_>=70_0_0","TBB_DMF",NA,"old code of one RDB ISSG code","TBB_DEF_70-99_0_0"
+1874,"TBB_MCF_70-99_0_0","TBB_DMF",NA,"not in RDB ISSG list",NA
+1875,"TBB_MOL_32_69_0","TBB_CRU",NA,"not in RDB ISSG list",NA

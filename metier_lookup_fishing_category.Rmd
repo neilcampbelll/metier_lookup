@@ -1,0 +1,587 @@
+---
+title: "A consistent métier look-up table for VMS products"
+subtitle: "Matching Metier Level 6, Benthis métiers and Fisheries Overview categories"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    code_folding: hide
+params:
+  lookup_url: "https://data.ices.dk/vms/api/MetierLookup"
+  rdb_url: "https://raw.githubusercontent.com/ices-eg/ICES-VMS-and-Logbook-Data-Call/main/resources/RDB_ISSG_Metier_list.csv"
+  cache: "downloads"
+  out_dir: "outputs"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+dir.create(params$cache, showWarnings = FALSE)
+dir.create(params$out_dir, showWarnings = FALSE)
+
+kable <- function(x, ...) knitr::kable(x, row.names = FALSE, ...)
+first_token <- function(x) sub("_.*$", "", x)
+same_or_both_na <- function(x, y) (is.na(x) & is.na(y)) | (!is.na(x) & !is.na(y) & x == y)
+count_table <- function(x, name) setNames(as.data.frame(table(x, useNA = "ifany")), c(name, "codes"))
+# Distinct non-missing values, collapsed into one string (NA if there are none)
+collapse_vals <- function(x) { x <- unique(x[!is.na(x)]); if (length(x)) paste(x, collapse = "; ") else NA_character_ }
+n <- function(x) sum(x, na.rm = TRUE)
+# collapse_vals of `v` for each code in `codes`, grouping by `key`; a plain named character vector
+by_code <- function(v, key, codes) { t <- tapply(v, key, collapse_vals); setNames(as.vector(t[codes]), codes) }
+```
+
+# Purpose
+
+This document highlights the mismatch between metier level 6, Benthis metier and Fisheries Overview gear groups, and proposes a method to create a robust look-up table that can adapt to future changes, using the RCG ISSG Metier Level 6 - Benthis Metier table as the basis, with a set defined rules for deriving Fisheries Overview groupings from these.
+
+## The problem
+
+In the processes to generate products from ICES VMS data, we join two codes each level 6 métier:
+
+- **The Benthis métier,** which is used to calculate swept area and seabed impact, and which carries the métier through the WGSFD quality assurance process, Metier Level 4 data products and production of OSPAR layers.
+- **The Fisheries Overview category,** which is used to build Fisheries Overview products.
+
+Both are currently taken from a look-up table within the database (the table returned by the `get_metier_lookup` function in the `icesVMS` R library). As rows have been added to table, the Benthis métier has been filled in but corresponding the Fisheries Overview category often has not, representing a gap in governance. A Level 6 métier with a Benthis métier but no corresponding Fisheries Overview category will be included in the WGSFD quality assurance process, and in data products based on this, but is missed by any Fisheries Overview product. The two sets of products will then describe different amounts of bottom-contacting fishing, with no warning that anything is missing.
+
+## RDB ISSG list as a definitive set of métiers
+
+The ICES VMS and logbook data call R workflow downloads and validates submissions against the RDB ISSG list (`RDB_ISSG_Metier_list.csv` in the [data call repository](https://github.com/ices-eg/ICES-VMS-and-Logbook-Data-Call)). Only métiers in that list can be submitted. The data call also takes Benthis métiers from that list when calculating swept area. Codes that exist only in the ICES look-up table can therefore never result in a submission. These are superfluous, and potentially misleading, because they give the appearance that certain Benthis métiers and categories exist, when they are not used in the data submission process.
+
+The proposed solution to this is that we **stop maintaining the ICES look-up table as a source in its own right and build a métier table from the RDB ISSG list instead:**
+
+1. **One row for each level 6 code in the RDB ISSG list,** with columns for metier levels 4 and 5, derived from the level 6 code to ensure consistency.
+2. **Benthis métiers taken from the RDB ISSG list in the first instance, and flagged for manual review in cases of mismatch.** 
+3. **A Fisheries Overview category for every code.** Rules for assigning fisheries overview categories are adopted to allow the look-up table to remain accurate as new metiers are added. The first rule is to take fisheries overview category from the first part of the Benthis métier, where there is one, so that the two classifications cannot diverge. Where there is no corresponding benthis metier, fisheries overview group comes from the gear's category in the FAO International Standard Statistical Classification of Fishing Gear (ISSCFG, 2016), through a mapping procedure that reproduces the categories already used in the ICES look-up table. This gives the mapping a published reference wherever the RDB ISSG list has not made a determination.
+
+## Relation to WGSFD Work
+
+The document created by Colin, [*Fishing category in the ICES VMS gear lookup: history and proposed update* (10 November 2026)](https://neilcampbelll.github.io/metier_lookup/vms_gear_lookup_proposal.html), traces how the fishing categories in the ICES look-up table were defined, and recommends defining the Fisheries Overview category from the gear code. This document adopts that rule, with the Benthis métier applied first, and grounds the gear-code mapping in ISSCFG 2016 rather than in a hand-made list. It also changes the base table from the ICES look-up table to the RDB ISSG list. That makes several of the proposal's clean-up tasks unnecessary, such as removing duplicates, tidying the appended rows and handling invalid codes, because the RDB ISSG list has none of those problems.
+
+It also represents a framework for the *Improved utility of data products* WGSFD term of reference to build upon. New data products developed by WGSFD could be thought of in terms of defining new units of aggregation of data, via a combination of gear, through adding new columns to this table, temporal and spatial aggregations. Governance of these products could then be owned by the group going forwards.
+
+Code used in this process is folded into this document; use the *Show* buttons to show it. All counts in the text are computed when the document is knitted, so be mindful that if you run this again after things have been (hopefully!) fixed, you may get different answers, or no answers at all!
+
+# Data
+
+```{r load}
+rdb_path <- file.path(params$cache, "RDB_ISSG_Metier_list.csv")
+if (!file.exists(rdb_path)) download.file(params$rdb_url, rdb_path, quiet = TRUE)
+rdb_raw <- read.csv(rdb_path, stringsAsFactors = FALSE, na.strings = c("", "NA"))
+
+# Same endpoint as icesVMS::get_metier_lookup(); cached so the document can be re-knitted offline
+lookup_path <- file.path(params$cache, "metier_lookup.csv")
+if (!file.exists(lookup_path)) {
+  write.csv(jsonlite::fromJSON(params$lookup_url), lookup_path, row.names = FALSE)
+}
+ices_raw <- read.csv(lookup_path, stringsAsFactors = FALSE, na.strings = c("", "NA"))
+# A second table was appended part way through, with its header row kept as data
+ices <- ices_raw[!ices_raw$leMetLevel6 %in% "LE_MET_level6", ]
+```
+
+- **RDB ISSG list:** `r nrow(rdb_raw)` rows covering `r length(unique(rdb_raw$Metier_level6))` level 6 codes. A code can be listed under several Regional Coordination Groups (RCGs), so it can appear more than once.
+- **ICES look-up table:** `r nrow(ices)` rows covering `r length(unique(ices$leMetLevel6))` level 6 codes, after removing the header row of a table that was appended part way through.
+
+# What's the problem with the ICES look-up table?
+
+```{r gap}
+rdb_codes <- unique(rdb_raw$Metier_level6)
+rdb_benthis <- by_code(rdb_raw$Benthis_metiers, rdb_raw$Metier_level6, rdb_codes)
+ices_fo     <- by_code(ices$fishingCategoryFo, ices$leMetLevel6, rdb_codes)
+in_ices     <- rdb_codes %in% ices$leMetLevel6
+has_benthis <- !is.na(rdb_benthis)
+gap_before  <- has_benthis & is.na(ices_fo)
+
+gap_tab <- as.data.frame.matrix(table(rdb_benthis[has_benthis],
+  ifelse(!in_ices[has_benthis], "not in ICES look-up table",
+         ifelse(gap_before[has_benthis], "no category", "has category"))))
+gap_tab <- cbind(benthisMetier = rownames(gap_tab), gap_tab)
+```
+
+The RDB ISSG table is used in the data call workflow to control which level 6 metiers can be uploaded. The ICES look-up table is then used within the database to map to a Benthis code (where neccessary) and to group the outputs for the Fishery Overviews. Measured over the métiers that can actually be submitted, the codes in the RDB ISSG list, the gap is rather large!
+
+```{r gap-counts}
+fo_status <- ifelse(!in_ices, "Not in the ICES look-up table",
+             ifelse(is.na(ices_fo), "In the ICES look-up table, no category",
+                                    "In the ICES look-up table, with a category"))
+k <- table(factor(fo_status, levels = c("In the ICES look-up table, with a category",
+                                        "In the ICES look-up table, no category",
+                                        "Not in the ICES look-up table")),
+           factor(has_benthis, levels = c(TRUE, FALSE)))
+```
+
+Of the `r length(rdb_codes)` métiers in the RDB ISSG list, only `r sum(!is.na(ices_fo))` have a Fisheries Overview category in the ICES look-up table:
+
+| RDB ISSG métiers | With a Benthis métier | Without a Benthis métier | Total |
+|---|--:|--:|--:|
+| In the ICES look-up table, with a Fishery Overview category | `r k[1, 1]` | `r k[1, 2]` | `r sum(k[1, ])` |
+| In the ICES look-up table, no Fishery Overview category | **`r k[2, 1]`** | `r k[2, 2]` | `r sum(k[2, ])` |
+| Not in the ICES look-up table | `r k[3, 1]` | `r k[3, 2]` | `r sum(k[3, ])` |
+| **Total** | `r sum(k[, 1])` | `r sum(k[, 2])` | `r sum(k)` |
+
+**`r k[2, 1]` métiers have a Benthis métier but no Fisheries Overview category.** Fishing with them is included in the WGSFD SAR process but missing from Fisheries Overview products.
+
+```{r gap-table}
+kable(gap_tab, caption = "RDB ISSG métiers with a Benthis métier, by their Fisheries Overview category in the ICES look-up table.")
+```
+
+As you can see, every Benthis métier is affected, so the shortfall in Fisheries Overview products runs across otter trawls, beam trawls, dredges and seines alike, and applies in all ecoregions.
+
+# Codes in the ICES look-up table that cannot be submitted
+
+```{r dropped}
+# Old_code holds comma-separated codes that each RDB ISSG code replaced
+old_map <- do.call(rbind, lapply(which(!is.na(rdb_raw$Old_code)), function(i)
+  data.frame(old = trimws(strsplit(rdb_raw$Old_code[i], ",")[[1]]), new = rdb_raw$Metier_level6[i])))
+old_map <- unique(old_map[old_map$old != old_map$new & !old_map$old %in% rdb_codes, ])
+
+succ <- lapply(ices$leMetLevel6, function(x) unique(old_map$new[old_map$old %in% x]))
+ices$rdbStatus <- ifelse(ices$leMetLevel6 %in% rdb_codes, "in RDB ISSG list",
+                  ifelse(lengths(succ) == 1, "old code of one RDB ISSG code",
+                  ifelse(lengths(succ) > 1, "old code of several RDB ISSG codes", "not in RDB ISSG list")))
+ices$rdbReplacement <- vapply(succ, function(s) if (length(s)) paste(s, collapse = "; ") else NA_character_, "")
+
+drop <- ices$rdbStatus != "in RDB ISSG list"
+dropped <- ices[drop, c("id", "leMetLevel6", "benthisMetiers", "fishingCategoryFo", "rdbStatus", "rdbReplacement")]
+
+drop_summary <- do.call(rbind, lapply(split(ices, ices$rdbStatus), function(d)
+  data.frame(status = d$rdbStatus[1], rows = nrow(d), codes = length(unique(d$leMetLevel6)),
+             with_benthis = n(!is.na(d$benthisMetiers)), with_category = n(!is.na(d$fishingCategoryFo)))))
+drop_gear <- sort(table(first_token(dropped$leMetLevel6[dropped$rdbStatus == "not in RDB ISSG list"])), decreasing = TRUE)
+```
+
+The ICES look-up table has `r sum(drop)` rows for codes that the RDB ISSG list does not accept. No submission can use them, so they have no place in the new table. They are still worth looking at, however, as they show which problems will disappear when the ICES look-up table is retired.
+
+```{r dropped-table}
+ds <- drop_summary[drop_summary$status != "in RDB ISSG list", ]
+ds <- rbind(ds, data.frame(status = "Total", rows = sum(ds$rows), codes = sum(ds$codes),
+                           with_benthis = sum(ds$with_benthis), with_category = sum(ds$with_category)))
+kable(ds, col.names = c("status in RDB ISSG list", "rows", "codes", "with a Benthis métier", "with a fishingCategoryFo"),
+      caption = "Rows of the ICES look-up table whose codes the RDB ISSG list does not accept.")
+```
+
+- **Old codes.** The RDB ISSG list records `r n(dropped$rdbStatus != "not in RDB ISSG list")` of these codes as old codes and names the codes that replaced them. Submissions cannot use them now, but I have saved the details, in `ICES_lookup_codes_not_in_RDB_ISSG.csv`, in case we need to refer back in the future.
+- **Codes the RDB ISSG list does not recognise.** These are national or legacy codes, for example with vessel-length suffixes such as `_349`, and codes that are not valid métiers at all. The most frequent gear codes among them are `r paste0(names(drop_gear)[1:8], " (", drop_gear[1:8], ")", collapse = ", ")`.
+- **Invalid codes.** Retiring the ICES look-up table removes these problems without any further decisions:
+  - `OTB/OTM`, a combined bottom and midwater trawl.
+  - Ten métiers with the made-up target group `CHECK`.
+  - Placeholders such as `UNKNOWN` and `XXX_vvv_vvv_vvv_vvv`.
+  - Non-DCF gear codes such as BTF, QUA and SUM.
+
+
+# Building a new metier look-up table from the RCG ISSG 
+
+## Step 1: one row per RDB ISSG code
+
+```{r build}
+met <- data.frame(leMetLevel6 = rdb_codes, stringsAsFactors = FALSE)
+pick <- function(col) unname(by_code(rdb_raw[[col]], rdb_raw$Metier_level6, rdb_codes))
+met$description      <- vapply(rdb_codes, function(x) rdb_raw$Description[rdb_raw$Metier_level6 == x][1], "")
+met$rcg              <- pick("RCG")
+met$startYear        <- pick("Start_year")
+met$endYear          <- pick("End_year")
+met$rdbMetierLevel5  <- pick("Metier_level5")
+met$benthisMetiers   <- pick("Benthis_metiers")
+benthis_rcg_conflict <- grepl(";", met$benthisMetiers)
+
+tok <- strsplit(met$leMetLevel6, "_", fixed = TRUE)
+met$metierLevel4 <- vapply(tok, `[`, "", 1)
+met$metierLevel5 <- vapply(tok, function(t) paste(t[1:2], collapse = "_"), "")
+# Level 5 as given by each RCG, compared with the first two parts of level 6
+l5_rows <- rdb_raw$Metier_level5 != sub("^([^_]+_[^_]+).*$", "\\1", rdb_raw$Metier_level6)
+l5_bad <- unique(rdb_raw[l5_rows %in% TRUE, c("Metier_level6", "Metier_level5", "RCG")])
+l5_mismatch <- met$leMetLevel6 %in% l5_bad$Metier_level6
+```
+
+The métier table has one row for each of the `r nrow(met)` metier level 6 codes in the RDB ISSG table, with the following columns:
+
+- **`rcg`:** the RCGs that list the code.
+- **`startYear`, `endYear` and `description`:** as given in the RDB ISSG list.
+- **`metierLevel4` and `metierLevel5`:** the first one and the first two parts of the level 6 code.
+
+Two things to note:
+
+- **Retired codes are kept.** `r n(!is.na(met$endYear))` codes have an end year (`r paste(unique(na.omit(met$endYear)), collapse = ", ")`). They remain valid for data from before that year. *Flagging this for future reference - we don't have a check in the workflow for this, so old codes can be submitted after they become invalid. Feels a low-priority fix!*
+- **Level 5 does not always match Level 6.** The RDB ISSG list's own level 5 differs from the level 6 code for `r sum(l5_mismatch)` codes (`r paste0(l5_bad$Metier_level6, " listed as ", l5_bad$Metier_level5, " by ", l5_bad$RCG, collapse = "; ")`). The table uses the value derived from level 6, and the difference is listed. *Maybe we want to follow up with the RCGs, but the issue seems to belong to the Mediterranean/Black Sea RCG, so not directly impacting on our work.*
+
+### ISSCFG gear categories
+
+```{r isscfg}
+# FAO CWP International Standard Statistical Classification of Fishing Gear (ISSCFG, 2016).
+# match: how the RDB ISSG gear code relates to ISSCFG (fixed values); note: free-text explanation
+isscfg <- read.table(sep = "|", header = TRUE, quote = "", strip.white = TRUE, stringsAsFactors = FALSE,
+                     colClasses = "character", text = "
+gear | isscfgCode | isscfgEntry                                | match                     | note
+OTB  | 03.12      | Single boat bottom otter trawls             | same code                 |
+OTT  | 03.13      | Twin bottom otter trawls                    | same code                 |
+PTB  | 03.15      | Bottom pair trawls                          | same code                 |
+TBB  | 03.11      | Beam trawls                                 | same code                 |
+OTM  | 03.21      | Single boat midwater otter trawls           | same code                 |
+PTM  | 03.22      | Midwater pair trawls                        | same code                 |
+PS   | 01.1       | Purse seines                                | same code                 |
+LA   | 01.2       | Surrounding nets without purse lines        | same code                 |
+SB   | 02.1       | Beach seines                                | same code                 |
+SV   | 02.2       | Boat seines                                 | same code                 |
+SX   | 02.9       | Seine nets (nei)                            | same code                 |
+SDN  | 02.2       | Boat seines                                 | subdivision               | Danish (anchored) seine, a type of boat seine
+SSC  | 02.2       | Boat seines                                 | subdivision               | Scottish (fly-shooting) seine, a type of boat seine
+SPR  | 02.2       | Boat seines                                 | subdivision               | Pair seine, a type of boat seine
+DRB  | 04.1       | Towed dredges                               | same code                 |
+DRH  | 04.2       | Hand dredges                                | same code                 |
+HMD  | 04.3       | Mechanized dredges                          | same gear, different code | ISSCFG code DRM (1980 code 11.2.0)
+HMP  | 10.3       | Pumps                                       | same gear, different code | ISSCFG code MPM (1980 code 11.1.0)
+GNS  | 07.1       | Set gillnets (anchored)                     | same code                 |
+GND  | 07.2       | Drift gillnets                              | same code                 |
+GNC  | 07.3       | Encircling gillnets                         | same code                 |
+GTR  | 07.5       | Trammel nets                                | same code                 |
+GTN  | 07.6       | Combined gillnets-trammel nets              | same code                 |
+FPN  | 08.1       | Stationary uncovered pound nets             | same code                 |
+FPO  | 08.2       | Pots                                        | same code                 |
+FYK  | 08.3       | Fyke nets                                   | same code                 |
+FWR  | 08.5       | Barriers, fences, weirs, etc.               | same code                 |
+LHP  | 09.1       | Handlines and hand-operated pole-and-lines  | same code                 |
+LHM  | 09.2       | Mechanized lines and pole-and-lines         | same code                 |
+LLS  | 09.31      | Set longlines                               | same code                 |
+LLD  | 09.32      | Drifting longlines                          | same code                 |
+LTL  | 09.5       | Trolling lines                              | same code                 |
+LH   | 09.9       | Hooks and lines (nei)                       | subdivision               | Hand and pole lines, not specified
+LN   | 05.9       | Lift nets (nei)                             | same code                 |
+MIS  | 10.9       | Gear nei                                    | same code                 |
+DIV  | 10.8       | Diving                                      | same gear, different code | ISSCFG code MDV
+FOO  | 10.2       | Hand implements                             | not listed                | Fishing on foot; nearest entry is hand implements (MHI)
+GES  | 10.9       | Gear nei                                    | not listed                | Glass eel fishing; nearest entry is gear nei (MIS)
+HMS  | 10.9       | Gear nei                                    | not listed                | Seaweed harvesting gear; nearest entry is gear nei (MIS)
+")
+isscfg_judgement <- isscfg$gear[isscfg$match == "not listed"]
+isscfg_missing <- setdiff(unique(met$metierLevel4), isscfg$gear)
+
+i <- match(met$metierLevel4, isscfg$gear)
+met$isscfgCode  <- isscfg$isscfgCode[i]
+met$isscfgEntry <- isscfg$isscfgEntry[i]
+```
+
+As we are using them to flag inconsistencies with Benthis metiers and define unallocated Fishery Overview groupings, we can explore the mapping to the FAO International Standard Statistical Classification of Fishing Gear (ISSCFG, 2016; see [references](#references)). `r sum(isscfg$match == "same code")` of the `r nrow(isscfg)` gear codes in the RDB ISSG list are ISSCFG codes as they stand. The other `r sum(isscfg$match != "same code")` are listed below. The `r length(isscfg_judgement)` marked "not listed" (`r paste(isscfg_judgement, collapse = ", ")`) are placed under the nearest entry, which is a judgement call; all three fall in miscellaneous gear (10) whichever entry is chosen. `r if (length(isscfg_missing)) paste("Gear codes with no ISSCFG entry yet:", paste(isscfg_missing, collapse = ", "), ".") else ""`
+
+```{r isscfg-exceptions}
+kable(isscfg[isscfg$match != "same code", c("gear", "isscfgCode", "isscfgEntry", "match", "note")],
+      col.names = c("gear code", "ISSCFG code", "ISSCFG entry", "relation to ISSCFG", "note"),
+      caption = "Gear codes in the RDB ISSG list that are not ISSCFG codes as they stand.")
+```
+
+Each gear code is placed in the FAO International Standard Statistical Classification of Fishing Gear (ISSCFG, 2016; see [references](#references)):
+
+- **Most gear codes are already ISSCFG codes.** 
+
+Other than the seines, the majority of exceptions will have little bearing on VMS-reporting vessels.
+
+- **Some use a different code for the same gear:**
+  - HMD (mechanised dredges) is ISSCFG's DRM, code 04.3.
+  - HMP (pumps) is MPM, code 10.3.
+  - DIV (diving) is MDV, code 10.8.
+  - HMD and HMP belonged to the harvesting-machines group of the 1980 classification, which the 2016 revision split between dredges and miscellaneous gear.
+- **Some are subdivisions of an ISSCFG gear:**
+  - SDN, SSC and SPR (Danish, Scottish and pair seines) are all types of "boat seine" (02.2).
+  - LH (hand and pole lines, not specified) belongs with hooks and lines (09).
+- **`r length(isscfg_judgement)` are not listed** (`r paste(isscfg_judgement, collapse = ", ")`). They are placed under the nearest entry, which is a judgement call. All three fall in miscellaneous gear (10) whichever entry is chosen.
+
+`r if (length(isscfg_missing)) paste("Gear codes with no ISSCFG entry yet:", paste(isscfg_missing, collapse = ", "), ".") else "Every gear code in the RDB ISSG list has an ISSCFG entry."`
+
+## Step 2: Benthis métiers
+
+The Benthis métier for each code is taken from the RDB ISSG list. Codes that look wrong are flagged for manual review below.
+
+```{r benthis-checks}
+gear <- met$metierLevel4
+prefix <- first_token(met$benthisMetiers)
+
+# 1. Same code, different RCGs
+c1 <- sum(benthis_rcg_conflict)
+
+# 2. Constant within level 5 (gear + target assemblage)?
+l5_vals <- tapply(met$benthisMetiers, met$metierLevel5, function(x) length(unique(x)))
+l5_mixed <- names(l5_vals)[l5_vals > 1]
+l5_tab <- met[met$metierLevel5 %in% l5_mixed, c("leMetLevel6", "metierLevel5", "benthisMetiers")]
+
+# 3. Benthis family matches the gear?
+allowed <- list(OT = c("OTB", "OTT", "PTB"), TBB = "TBB", DRB = c("DRB", "HMD"),
+                SDN = c("SDN", "SPR"), SSC = "SSC")
+fam_ok <- is.na(prefix) | mapply(function(p, g) g %in% allowed[[p]], prefix, gear)
+fam_tab <- met[!fam_ok, c("leMetLevel6", "benthisMetiers")]
+
+# 4. Gears that are towed or dragged over the seabed but have no Benthis métier
+bottom_gears <- c("OTB", "OTT", "PTB", "TBB", "DRB", "DRH", "HMD", "HMP", "HMS",
+                  "SDN", "SSC", "SPR", "SB", "SV", "SX")
+no_benthis <- gear %in% bottom_gears & is.na(met$benthisMetiers)
+gear_note <- c(
+  SPR = "A boat seine in ISSCFG, like Danish and Scottish seines. The other SPR_DEF code in the list is SDN_DMF.",
+  SB  = "Benthis has seine métiers only for Danish and Scottish seines. It is unlikely that a beach seine would have VMS data, but for future spatial data work this might be relevant",
+  SV  = "The same ISSCFG entry as Danish and Scottish seines (SDN_DMF, SSC_DMF), but Benthis has no class for boat seines in general. I'm not really sure what SV is?",
+  SX  = "Miscellaneous seines. Benthis has seine métiers only for Danish and Scottish seines.",
+  DRH = "In the ISSCFG dredges group with DRB and HMD, which are both DRB_MOL. Difficult to think how this would relate to a swept area calculation, as power and length for a hand dredge will both be zero.",
+  HMP = "ISSCFG classes pumps as miscellaneous gear, not dredges, and Benthis has no class for them; seabed contact is likely to be high. Not sure of the circumstances in which they are deployed.",
+  HMS = "Not in ISSCFG. Towed kelp trawls contact the seabed.")
+nb_tab <- data.frame(met[no_benthis, c("leMetLevel6", "isscfgCode", "isscfgEntry")], note = gear_note[gear[no_benthis]])
+
+# 5. Agreement with the ICES look-up table
+ices_benthis <- by_code(ices$benthisMetiers, ices$leMetLevel6, met$leMetLevel6)
+met$icesBenthisMetiers <- unname(ices_benthis)
+cmp <- ifelse(!met$leMetLevel6 %in% ices$leMetLevel6, "code not in ICES look-up table",
+       ifelse(same_or_both_na(met$benthisMetiers, ices_benthis), "same",
+       ifelse(is.na(ices_benthis), "missing in ICES look-up table",
+       ifelse(is.na(met$benthisMetiers), "missing in RDB ISSG list", "different"))))
+cmp_tab <- met[!cmp %in% c("same", "code not in ICES look-up table"), c("leMetLevel6", "benthisMetiers", "icesBenthisMetiers")]
+```
+
+1. **Consistent across RCGs.** `r if (c1 == 0) "Every code has the same Benthis métier in every RCG that lists it." else paste(c1, "codes have different Benthis métiers in different RCGs.")`
+2. **Consistent within level 5.** Each Benthis métier should depend on the gear and target assemblage. `r if (length(l5_mixed) == 0) "It does, for every level 5." else paste0("It does except for ", paste(l5_mixed, collapse = ", "), ":")`
+
+```{r l5-mixed, eval = length(l5_mixed) > 0}
+kable(l5_tab, caption = "Level 5 métiers whose codes have different Benthis métiers.")
+```
+
+3. **Consistent with the gear.** Otter-trawl Benthis métiers (`OT_`) should only be on OTB, OTT and PTB codes, and the same applies to beam trawls, dredges and seines. `r if (nrow(fam_tab) == 0) "No code breaks this rule, and no pelagic or static gear has a Benthis métier." else paste(nrow(fam_tab), "codes break it.")`
+4. **Bottom-contacting gears with no Benthis métier.** `r sum(no_benthis)` codes are for gears that are towed or dragged over the seabed but have no Benthis métier. Fishing with them gets no seabed impact:
+
+```{r no-benthis-table}
+kable(nb_tab, col.names = c("leMetLevel6", "ISSCFG code", "ISSCFG entry", "note"),
+      caption = "Bottom-contacting gears with no Benthis métier in the RDB ISSG list.")
+```
+
+5. **Agreement with the ICES look-up table.** Of the `r sum(met$leMetLevel6 %in% ices$leMetLevel6)` codes in both, `r sum(cmp == "same")` have the same Benthis métier. `r if (nrow(cmp_tab)) "The differences are:" else "There are no differences."`
+
+```{r cmp-table, eval = nrow(cmp_tab) > 0}
+kable(cmp_tab, col.names = c("leMetLevel6", "RDB ISSG list", "ICES look-up table"),
+      caption = "Codes whose Benthis métier differs between the two sources.")
+```
+
+**In summary,** the Benthis mappings in the RDB ISSG list are consistent, so taking them as they stand is sound. The open question to WGSFDGOV is the `r sum(no_benthis)` bottom-contacting codes without a Benthis métier, listed in check 4.
+
+## Step 3: Fisheries Overview categories
+
+### Rule 1: from the Benthis métier
+
+**Rule 1.** If the RDB ISSG list gives a Level 6 métier a corresponding Benthis métier, its Fisheries Overview category comes from the gear part of that Benthis métier:
+
+- **OT_** → Otter
+- **TBB_** → Beam
+- **DRB_** → Dredge
+- **SDN_ and SSC_** → Demersal seine
+
+For example, `OTB_CRU_70-99_0_0` has Benthis métier OT_CRU, so its category is Otter.
+
+```{r rule1}
+complete <- !is.na(ices$benthisMetiers) & !is.na(ices$fishingCategoryFo)
+benthis_to_fo <- c(OT = "Otter", TBB = "Beam", SDN = "Demersal seine", SSC = "Demersal seine", DRB = "Dredge")
+r1_check <- unname(benthis_to_fo[first_token(ices$benthisMetiers[complete])]) == ices$fishingCategoryFo[complete]
+r1_evidence <- as.data.frame.matrix(table(first_token(ices$benthisMetiers[complete]), ices$fishingCategoryFo[complete]))
+r1_evidence <- cbind(benthisPrefix = rownames(r1_evidence), r1_evidence)
+
+fo_r1 <- unname(benthis_to_fo[prefix])
+```
+
+In the ICES look-up table, every one of the `r sum(complete)` rows with both a Benthis métier and a category follows the first part of the Benthis métier, with `r sum(!r1_check)` exceptions:
+
+```{r rule1-table}
+kable(r1_evidence, caption = "ICES look-up table rows with both values: first part of the Benthis métier by Fisheries Overview category.")
+```
+
+This guarantees that any Level 6 métier in the WGSFD data submission process which gets a swept area calculation through its Benthis métier also has a Fisheries Overview category.
+
+### Rule 2: from the ISSCFG gear category
+
+**Rule 2.** If a métier has no Benthis métier (e.g. pelagic trawls, fish traps, gillnets, etc.), its category comes from the ISSCFG 2016 category of its gear code, the part of the level 6 code before the first underscore, using this mapping:
+
+```{r mapping}
+isscfg_to_fo <- function(code) {
+  by_group <- c("01" = "Midwater", "02" = "Demersal seine", "04" = "Dredge", "05" = "Static", "06" = "Static",
+                "07" = "Static", "08" = "Static", "09" = "Static", "10" = "Other", "99" = "Other")
+  unname(ifelse(code == "03.11", "Beam",
+         ifelse(startsWith(code, "03.1"), "Otter",
+         ifelse(startsWith(code, "03.2"), "Midwater", by_group[substr(code, 1, 2)]))))
+}
+mapping <- data.frame(
+  isscfg = c("01 Surrounding nets", "02 Seine nets", "03.11 Beam trawls", "03.12 to 03.19 Bottom otter and pair trawls",
+             "03.21 to 03.29 Midwater trawls", "04 Dredges", "05 Lift nets", "06 Falling gear",
+             "07 Gillnets and entangling nets", "08 Traps", "09 Hooks and lines", "10 Miscellaneous gear", "99 Gear not known"),
+  fo = isscfg_to_fo(c("01", "02", "03.11", "03.12", "03.21", "04", "05", "06", "07", "08", "09", "10", "99")))
+kable(mapping, col.names = c("ISSCFG 2016 category", "Fisheries Overview category"),
+      caption = "mapping from ISSCFG 2016 gear categories to Fisheries Overview categories.")
+```
+
+For example, `GNS_DEF_>=220_0_0` has gear code GNS, which is ISSCFG 07.1 (set gillnets), so its category is Static. Semipelagic trawls (03.3) and trawls not elsewhere identified (03.9) are left out of the mapping: no code in the RDB ISSG list uses them, and they could be either bottom or midwater. *Question for WGSFDGOV. If a gear can be used on the bottom or in midwater, is it more precautionary to assume bottom contact, when there is no evidence either way?*
+
+```{r rule2}
+gear_rules <- isscfg
+gear_rules$fo <- isscfg_to_fo(gear_rules$isscfgCode)
+ices_gear <- first_token(ices$leMetLevel6)
+gear_rules$codes <- as.vector(table(factor(gear, levels = gear_rules$gear)))
+gear_rules$precedent <- vapply(gear_rules$gear, function(g) {
+  t <- table(ices$fishingCategoryFo[ices_gear %in% g])
+  if (length(t)) paste0(names(t), " (", t, ")", collapse = ", ") else "–"
+}, "")
+precedent_conflict <- gear_rules$precedent != "–" & !startsWith(gear_rules$precedent, paste0(gear_rules$fo, " ("))
+missing_rule <- setdiff(unique(gear), gear_rules$gear[!is.na(gear_rules$fo)])
+gear_to_fo <- setNames(gear_rules$fo, gear_rules$gear)
+fo_r2 <- unname(gear_to_fo[gear])
+expert_gear <- isscfg_judgement
+
+kable(gear_rules[, c("gear", "codes", "isscfgCode", "isscfgEntry", "fo", "precedent")],
+      col.names = c("gear code", "RDB ISSG codes", "ISSCFG code", "ISSCFG entry", "Fisheries Overview category",
+                    "categories in ICES look-up table"),
+      caption = "Rule 2 applied to each gear code in the RDB ISSG list, with the categories the ICES look-up table already gives it.")
+```
+
+The mapping reproduces the categories already used in the ICES look-up table. `r sum(gear_rules$precedent != "–")` of the `r nrow(gear_rules)` gear codes have categories there, and the mapping matches them `r if (!any(precedent_conflict)) "in every case." else paste0("in every case except ", paste(gear_rules$gear[precedent_conflict], collapse = ", "), ".")` `r if ("LA" %in% gear_rules$gear[precedent_conflict]) "The current ICES look-up table has LA (lampara nets) as Static, but ISSCFG places them with purse seines as surrounding nets (01), which makes them Midwater." else ""` `r if (length(missing_rule)) paste("Gear codes still without a category:", paste(missing_rule, collapse = ", "), ".") else "Every gear code in the RDB ISSG list gets a category."`
+
+Using ISSCFG changes two categories from the earlier draft of this mapping:
+
+- **HMP (pumps):** Other rather than Dredge.
+- **LA (lampara nets):** Midwater rather than Static.
+
+It also gives a published basis for all but the `r length(expert_gear)` gear codes ISSCFG does not list (`r paste(expert_gear, collapse = ", ")`). Those are miscellaneous gear, and so Other, whichever entry is chosen.
+
+## Checks and results
+
+```{r fill}
+both <- !is.na(fo_r1) & !is.na(fo_r2)
+rule_disagree <- met$leMetLevel6[both & fo_r1 != fo_r2]
+
+met$fishingCategoryFo <- ifelse(!is.na(fo_r1), fo_r1, fo_r2)
+met$foSource <- ifelse(!is.na(fo_r1), "Rule 1 (Benthis)",
+                ifelse(!is.na(fo_r2), ifelse(gear %in% expert_gear, "Rule 2 (ISSCFG, nearest entry)", "Rule 2 (ISSCFG)"),
+                       "unresolved"))
+met$icesFishingCategoryFo <- unname(ices_fo[met$leMetLevel6])
+ices_cmp <- !is.na(met$icesFishingCategoryFo)
+fo_differs <- met[ices_cmp & met$icesFishingCategoryFo != met$fishingCategoryFo,
+                  c("leMetLevel6", "icesFishingCategoryFo", "fishingCategoryFo")]
+```
+
+
+```{r fo-differs, eval = nrow(fo_differs) > 0}
+kable(fo_differs, caption = "Codes whose category differs from the ICES look-up table.")
+```
+
+```{r fill-results}
+kable(as.data.frame.matrix(table(met$fishingCategoryFo, met$foSource)) |> (\(m) cbind(category = rownames(m), m))(),
+      caption = "RDB ISSG codes by Fisheries Overview category and rule used.")
+```
+
+# Outcome
+
+```{r outcome}
+bottom_cats <- c("Otter", "Beam", "Dredge", "Demersal seine")
+checks <- data.frame(
+  check = c("RDB ISSG métiers with a Benthis métier but no Fisheries Overview category",
+            "RDB ISSG métiers with no Fisheries Overview category",
+            "RDB ISSG métiers with a bottom-contacting category but no Benthis métier",
+            "Codes with a Benthis métier that cannot be submitted (not in the RDB ISSG list)"),
+  Old_ICES_lookup_table = c(sum(gap_before), sum(is.na(ices_fo)),
+                        sum(ices_fo %in% bottom_cats & !has_benthis),
+                        length(unique(dropped$leMetLevel6[!is.na(dropped$benthisMetiers)]))),
+  Proposed_new_lookup_table = c(sum(has_benthis & is.na(met$fishingCategoryFo)), sum(is.na(met$fishingCategoryFo)),
+                sum(met$fishingCategoryFo %in% bottom_cats & is.na(met$benthisMetiers)), 0))
+gap_closed <- checks$Proposed_new_lookup_table[1] == 0
+```
+
+`r if (gap_closed) "**Every métier with a Benthis métier generates a valid Fisheries Overview category.** Every métier included in the WGSFD quality assurance process through its Benthis métier will also appear in Fisheries Overview products." else paste0("**", checks$Proposed_new_lookup_table[1], " métiers with a Benthis métier still have no Fisheries Overview category.** Their Benthis métiers need adding to rule 1.")` `r if (checks$Proposed_new_lookup_table[2] == 0) "**Every métier that can be submitted has a Fisheries Overview category,** subject to the judgement calls on the gear codes with no precedent." else paste(checks$Proposed_new_lookup_table[2], "submittable métiers still have no category.")`
+
+```{r outcome-table}
+kable(checks, col.names = c("check", "ICES look-up table", "new table"),
+      caption = "Coverage of the Fisheries Overview category: the ICES look-up table compared with the new table built from the RDB ISSG list.")
+```
+The eight Metier codes in the new table with a bottom contacting metier but no corresponding benthis code are the various seines and the hand dredges noted above. These are very unlikely to be present in the VMS data, so for now I think we can just note this discrepancy and move on.
+
+# Choices made
+
+```{r choices}
+choices <- data.frame(
+  topic = c("Base table", "Retired codes", "Levels 4 and 5", "Benthis métiers",
+            "Fisheries Overview category", "Gears not in ISSCFG", "LA (lampara nets)", "HMP (pumps)"),
+  choice = c("RDB ISSG list, one row per level 6 code",
+             "Kept, with their end year",
+             "Derived from the level 6 code",
+             "Taken from the RDB ISSG list unchanged; questionable ones flagged",
+             "Rule 1 (Benthis métier), then rule 2 (ISSCFG 2016 category of the gear code)",
+             paste0(paste(expert_gear, collapse = ", "), ": nearest ISSCFG entry, giving Other"),
+             "Midwater, following ISSCFG; the ICES look-up table has Static",
+             "Other, following ISSCFG (pumps are miscellaneous gear, not dredges)"),
+  basis = c("The data call validates submissions against it, so only its codes can be submitted",
+            "Still valid for data from before the end year",
+            "Levels 4 and 5 are defined as parts of level 6; the RDB ISSG list's own level 5 has errors",
+            "The list is internally consistent, and the data call takes Benthis métiers from it",
+            "Rule 1 keeps the two classifications in step; ISSCFG gives rule 2 a published reference, and the mapping reproduces the ICES look-up table",
+            "Not listed in ISSCFG; all fall in miscellaneous gear whichever entry is chosen",
+            "ISSCFG places lampara nets with purse seines as surrounding nets",
+            "ISSCFG 2016 moved pumps from harvesting machines to miscellaneous gear"),
+  codes = c(nrow(met), n(!is.na(met$endYear)), nrow(met), n(!is.na(met$benthisMetiers)),
+            nrow(met), n(gear %in% expert_gear), n(gear == "LA"), n(gear == "HMP"))
+)
+kable(choices, caption = "Choices made in building the table. 'codes' is the number of RDB ISSG codes affected, where that applies.")
+```
+
+# Decisions for WGSFDGOV {#decisions}
+
+1. **Adopt the RDB ISSG list as the basis of the métier table.**
+   - Build the table from the RDB ISSG list, and stop maintaining the ICES look-up table as a separate source.
+   - Older data may still use codes that are now dropped. Is the old-code mapping from the RDB ISSG list enough to translate them?
+2. **Accept the Benthis métiers in the RDB ISSG list as they stand, and decide on the `r sum(no_benthis)` bottom-contacting codes that have none:**
+   - `SPR_DEF_>0_0_0`: SDN_DMF, like `SPR_DEF_>=120_0_0`? Both are boat seines in ISSCFG.
+   - `DRH_MOL_>0_0_0` (hand dredge): DRB_MOL, like the other ISSCFG dredges (DRB and HMD)?
+   - Beach and boat seines (`r paste(met$leMetLevel6[no_benthis & gear %in% c("SB", "SV", "SX")], collapse = ", ")`): keep outside the Benthis classification? ISSCFG groups them with Danish and Scottish seines, but Benthis has classes only for those two.
+   - `r paste(met$leMetLevel6[no_benthis & gear %in% c("HMP", "HMS")], collapse = ", ")` (pump and seaweed harvesting): no Benthis métier? Neither ISSCFG nor Benthis treats them as dredges.
+   - Any change would be proposed to the RDB ISSG list's maintainers, so that the data call and the métier table stay the same.
+3. **Approve the Fisheries Overview mapping: approach**
+   - Rule 1 (Benthis métier) and rule 2 (corresponding ISSCFG 2016 category).
+   - The two places where ISSCFG changes the ICES look-up table or the earlier draft: LA (lampara nets) becomes Midwater, and HMP (pumps) becomes Other.
+   - The nearest-entry calls for the gear codes ISSCFG does not list: `r paste(expert_gear, collapse = ", ")`, all Other.
+4. **Approve the resulting table for import into the ICES VMS database.**
+   - **Columns not carried over.** The ICES look-up table has columns that the RDB ISSG list does not supply: `r paste(setdiff(names(ices_raw), c("id", "leMetLevel6", "benthisMetiers", "metierLevel5", "metierLevel4", "description", "fishingCategoryFo")), collapse = ", ")`. Are they still needed, and if so, where do their values come from?
+   - **Provenance columns.** Should `foSource`, `rcg`, `startYear`, `endYear` and the ICES comparison columns be kept or stripped?
+   - **Keeping it current.** How is the table updated when the RDB ISSG list changes? Re-knitting this document rebuilds it.
+
+
+# Outputs
+
+```{r outputs}
+out_cols <- c("leMetLevel6", "metierLevel5", "metierLevel4", "description", "benthisMetiers", "fishingCategoryFo",
+              "foSource", "isscfgCode", "isscfgEntry", "rcg", "startYear", "endYear",
+              "icesBenthisMetiers", "icesFishingCategoryFo")
+write.csv(met[, out_cols], file.path(params$out_dir, "metier_table_from_RDB_ISSG.csv"), row.names = FALSE)
+write.csv(dropped, file.path(params$out_dir, "ICES_lookup_codes_not_in_RDB_ISSG.csv"), row.names = FALSE)
+
+review <- rbind(
+  data.frame(leMetLevel6 = nb_tab$leMetLevel6, topic = "Benthis",
+             issue = paste("Bottom-contacting gear with no Benthis métier.", nb_tab$note)),
+  if (nrow(l5_tab)) data.frame(leMetLevel6 = l5_tab$leMetLevel6, topic = "Benthis",
+                               issue = "Benthis métier differs within the same level 5"),
+  if (nrow(fam_tab)) data.frame(leMetLevel6 = fam_tab$leMetLevel6, topic = "Benthis",
+                                issue = "Benthis métier does not match the gear"),
+  data.frame(leMetLevel6 = met$leMetLevel6[gear %in% expert_gear], topic = "Fisheries Overview",
+             issue = paste0("Gear not in ISSCFG; nearest entry gives ", met$fishingCategoryFo[gear %in% expert_gear])),
+  if (nrow(fo_differs)) data.frame(leMetLevel6 = fo_differs$leMetLevel6, topic = "Fisheries Overview",
+             issue = paste0("ISSCFG gives ", fo_differs$fishingCategoryFo, "; ICES look-up table has ", fo_differs$icesFishingCategoryFo)),
+  data.frame(leMetLevel6 = l5_bad$Metier_level6, topic = "RDB ISSG list",
+             issue = paste0("Level 5 given as ", l5_bad$Metier_level5, " by ", l5_bad$RCG))
+)
+review <- review[!duplicated(review), ]
+write.csv(review, file.path(params$out_dir, "codes_for_review.csv"), row.names = FALSE)
+```
+
+Three files are written to the ``r params$out_dir`` folder:
+
+- **`metier_table_from_RDB_ISSG.csv`.** The new métier table: `r nrow(met)` codes, with these columns:
+  - `leMetLevel6`, `metierLevel5`, `metierLevel4`, `description`, `benthisMetiers` and `fishingCategoryFo`, named as in the ICES look-up table.
+  - `foSource`: the rule used for the category.
+  - `isscfgCode` and `isscfgEntry`: the gear's ISSCFG 2016 category.
+  - `rcg`, `startYear` and `endYear`: from the RDB ISSG list.
+  - `icesBenthisMetiers` and `icesFishingCategoryFo`: the values in the ICES look-up table, for comparison.
+- **`ICES_lookup_codes_not_in_RDB_ISSG.csv`.** The `r nrow(dropped)` rows of the ICES look-up table that are dropped, with their status and, for old codes, the RDB ISSG codes that replaced them.
+- **`codes_for_review.csv`.** One line per code and issue (`r nrow(review)` lines), covering the Benthis questions, the ISSCFG nearest-entry calls, the categories that differ from the ICES look-up table, and the level 5 errors in the RDB ISSG list.
+
+Both sources are cached in ``r params$cache``. Delete the cached files to fetch fresh copies when knitting.
+
+# References {#references}
+
+- FAO Coordinating Working Party on Fishery Statistics (CWP). *International Standard Statistical Classification of Fishing Gear (ISSCFG, 2016)*. CWP Handbook of Fishery Statistics. Adopted at the 25th CWP Session, Rome, February 2016. <https://www.fao.org/cwp-on-fishery-statistics/handbook/capture-fisheries-statistics/fishing-gear-classification/en/>
+- He, P., Chopin, F., Suuronen, P., Ferro, R.S.T. and Lansley, J. 2021. *Classification and illustrated definition of fishing gears*. FAO Fisheries and Aquaculture Technical Paper No. 672. Rome, FAO. Definitions and illustrations of the ISSCFG gear categories.
+- ICES VMS and logbook data call: RDB ISSG métier list, `resources/RDB_ISSG_Metier_list.csv`. <https://github.com/ices-eg/ICES-VMS-and-Logbook-Data-Call>
